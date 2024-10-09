@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -6,13 +7,13 @@ export default function Footer() {
         
        
 
-            <div className='flex flex-col gap-5'>
+            <div className='flex flex-col gap-2'>
             <p>FOLLOW COMPANY NAME</p>
             <p>@followcompanyname</p>
             <p>Social Handle</p>
             </div>
 
-            <div className='flex flex-col gap-5'>
+            <div className='flex flex-col gap-2'>
             <p className='font-bold'>SHOP BY CATEGORY</p>
             <p>Shop by category</p>
             <p>Shop by category</p>
@@ -21,9 +22,10 @@ export default function Footer() {
             <p>Shop by category</p>
             </div>
 
-            <div className='flex flex-col gap-5'>
+            <div className='flex flex-col gap-2'>
             <p className='font-bold'>INFO</p>
-            <p>Shop by category</p>
+            <a href='/contact'> <p>Contact</p> </a>
+           
             <p>Shop by category</p>
             <p>Shop by category</p>
             <p>Shop by category</p>
@@ -31,7 +33,7 @@ export default function Footer() {
            </div> 
        
        
-        <div className='flex flex-col gap-5'>
+        <div className='flex flex-col gap-2'>
            <p className='font-bold' >JOIN TREASURE MAILING LIST</p>
             <p>15% OFF YOUR FIRST PURCHASE + EARLY</p>
             <p>SHOP BY CATEGORY</p>

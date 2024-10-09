@@ -12,11 +12,18 @@ export default function Navbar() {
  
 
   return (
-    <div className="sticky top-0">
-      <div className="bg-red-400 flex justify-center p-4">
+    <div className="sticky top-0 shadow-sm bg-white h-[135px]">
+
+    
+
+   
+
+      <div className="flex bg-red-600 justify-center p-3">
         <p className="font-bold">YOU FIRST SHIPPING ON ORDER COLLECTION</p>
       </div>
-      <div className="flex justify-between items-center bg-white shadow-sm shadow-black p-8">
+
+      <div className="justify-between items-center lg:pt-6 pt-10 px-10">
+        <div className="flex justify-between ">
         <div>
           <div className="lg:hidden flex gap-10">
             <FaBars size={18} /> 
@@ -37,10 +44,14 @@ export default function Navbar() {
           <FaUser size={18} />
           <FaCartShopping size={18} />
         </div>
+        </div>
+          < NavLink />
       </div>
 
-      <NavLink />
 
+
+     
+ 
     </div>
   );
 }
