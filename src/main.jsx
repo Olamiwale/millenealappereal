@@ -13,6 +13,8 @@ import Home from './home/Home.jsx';
 import Product from './product/Product.jsx';
 import ProductDetails from './product/ProductDetails.jsx';
 import Contact from './contact/Contact.jsx';
+import Cart from './cart/Cart.jsx';
+import About from './about/About.jsx'
 
 
 
@@ -37,6 +39,12 @@ const router = createBrowserRouter([
       },
       {
         path:'/contact', element: <Contact />
+      },
+      {
+        path:'/cart', element: <Cart />
+      },
+      {
+        path:'/about', element: <About />
       },
       
       

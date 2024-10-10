@@ -85,9 +85,17 @@ export default function ProductDetails({ img, title }) {
             <Accordion />
           </div>
 
-          <div className="flex gap-2 justify-between mt-[40px] uppercase font-semibold">
-            <div className="p-3 bg-yellow-300 w-full flex items-center justify-center"> Call to Order +234567890 </div>
-            <div className="bg-green-500 w-full flex justify-center items-center"> Whatsapp to Order</div>
+          <div className="flex gap-2 justify-between mt-[40px] uppercase font-bold text-white">
+
+            <div className="p-3 bg-black/70 w-full flex items-center space-x-5 justify-center"> 
+            <p>Call to order</p>
+            <img src="/phoneImg.png" className="w-8" />
+              </div>
+            <div className="bg-green-500 w-full flex justify-center items-center space-x-5"> 
+              <p>Whatsapp</p>
+              <img src="/whatsapp.png" className="w-8" />
+              </div>
+
           </div>
 
         

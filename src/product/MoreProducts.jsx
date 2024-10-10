@@ -12,7 +12,7 @@ export default function MoreProduct() {
      
       </div>
 
-      <div className="grid lg:grid-cols-4 grid-cols-2 justify-between gap-4">
+      <div className="grid lg:grid-cols-4 grid-cols-2 justify-between lg:gap-4 md:gap-10">
         {product.slice(0, 4).map((item, id) => (
           <div
             key={id}
@@ -22,7 +22,7 @@ export default function MoreProduct() {
               onClick={() => handleItemClick(item)}
               href={`/product/${item.id}`}
             >
-              <img src={item.imgUrl} className="h-[250px] w-[210px] shadow-md shadow-black" />
+              <img src={item.imgUrl} className="h-[250px] w-[210px] shadow-md shadow-gray-300" />
             </a>
 
             <p className="py-3"> {item.name} </p>
