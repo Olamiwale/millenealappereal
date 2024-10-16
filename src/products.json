@@ -1,0 +1,195 @@
+[
+    {
+        "id": "001",
+        "category": "Wig",
+        "name": "ULTRABOOST 22 SHOES",
+        "seller": "Addidas",
+        "price": 420,
+        "stock": 20,
+        "ratings": 4,
+        "ratingsCount": 3725,
+        "imgUrl": "https://www.rewigs.co.uk/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/b/o/bob_afro_short_curly_capless_cap_synthetic_wig_for_black_women.jpg",
+        "shipping": 1,
+        "quantity": 0
+    },
+    
+    {
+        "id": "002",
+        "category": "Wig",
+        "name": "SUPERNOVA SHOES",
+       
+        "price": 245,
+        "imgUrl": "https://media.rewigs.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/s/h/short_grey_wig_for_african_women-1.jpg"
+    },
+    {
+        "id": "003",
+        "category": "Wig",
+        "name": "LITE RACER ADAPT 3.0 SHOES",
+        "seller": "Addidas",
+        "price": 229,
+        "stock": 10,
+        "ratings": 5,
+        "ratingsCount": 1764,
+        "imgUrl": "https://tse3.mm.bing.net/th?id=OIP.OtvkGMaxdghjbwL0xiAhPwHaHa&pid=Api&P=0&h=220",
+        "shipping": 32,
+        "quantity": 0
+    },
+    {
+        "id": "004",
+        "category": "wig",
+        "name": "4DFWD SHOES",
+        "seller": "Addidas",
+        "price": 287,
+        "stock": 11,
+        "ratings": 4,
+        "ratingsCount": 799,
+        "imgUrl": "https://www.rewigs.co.uk/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/b/l/black_women_s_big_afro_synthetic_curly_hair_wigs.jpg",
+        "shipping": 49,
+        "quantity": 0
+    },
+    {
+        "id": "005",
+        "category": "Wig",
+        "name": "KAPTIR 2.0 SHOES",
+        "seller": "Addidas",
+        "price": 138,
+        "stock": 19,
+        "ratings": 3,
+        "ratingsCount": 4372,
+        "imgUrl": "https://m.media-amazon.com/images/I/71pNaCp0B3L.jpg",
+        "shipping": 19,
+        "quantity": 0
+    },
+    {
+        "id": "006",
+        "category": "Bag",
+        "name": "4DFWD PULSE SHOES",
+        "seller": "Addidas",
+        "price": 226,
+        "stock": 1,
+        "ratings": 4,
+        "ratingsCount": 2870,
+        "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/91rm-LzBySL._AC_UL1500_.jpg",
+        "shipping": 15,
+        "quantity": 0
+    },
+    {
+        "id": "007",
+        "category": "Bag",
+        "name": "ZX 1K BOOST SHOES",
+        "seller": "Addidas",
+        "price": 319,
+        "stock": 7,
+        "ratings": 4,
+        "ratingsCount": 1360,
+        "imgUrl": "https://tse1.mm.bing.net/th?id=OIP.pa5kIalNl3Lzig-kIO4srQAAAA&pid=Api&P=0&h=220",
+        "shipping": 50,
+        "quantity": 0
+    },
+    {
+        "id": "008",
+        "category": "Bag",
+        "name": "ZX 1K BOOST SHOES",
+        "seller": "Addidas",
+        "price": 319,
+        "stock": 7,
+        "ratings": 4,
+        "ratingsCount": 1360,
+        "imgUrl": "https://i5.walmartimages.com/asr/7300cc98-20aa-4d97-bfb9-bcc25ec8b526.4dcca1a3a2a8ebf873886eba95ca78c9.jpeg",
+        "shipping": 50,
+        "quantity": 0
+    },
+   
+   
+    {
+        "id": "010",
+        "category": "gown",
+        "name": "NMD_R1 V2 SHOES",
+        "seller": "Addidas",
+        "price": 260,
+        "stock": 4,
+        "ratings": 5,
+        "ratingsCount": 1976,
+        "imgUrl": "https://i.pinimg.com/originals/33/b5/3c/33b53c2c6a110189b07ee157e0dc63e1.jpg",
+        "shipping": 46,
+        "quantity": 0
+    },
+    {
+        "id": "011",
+        "category": "gown",
+        "name": "NMD_R1 V2 SHOE",
+        "seller": "Addidas",
+        "price": 260,
+        "stock": 4,
+        "ratings": 5,
+        "ratingsCount": 1976,
+        "imgUrl": "https://www.instaloverz.com/wp-content/uploads/2016/07/9-modest-womens-fashion.jpg",
+        "shipping": 46,
+        "quantity": 0
+    },
+    {
+        "id": "012",
+        "category": "gown",
+        "name": "NMD_R1 SHOE",
+        "seller": "Addidas",
+        "price": 260,
+        "stock": 4,
+        "ratings": 5,
+        "ratingsCount": 1976,
+        "imgUrl": "https://www.rosewe.com/images/201808/source_img/209432_G_15338805682100.jpg",
+        "shipping": 46,
+        "quantity": 0
+    },
+
+    {
+        "id": "013",
+        "category": "gown",
+        "name": "NMD_R1 SHOE",
+        "price": 260,
+        "imgUrl": "http://feedinspiration.com/wp-content/uploads/2015/05/Party-Dresses-for-Women-2.jpg"
+    },
+    {
+        "id": "014",
+        "category": "gown",
+        "name": "NMD_R1 SHOE",
+        "price": 260,
+        "imgUrl": "http://www.fashiondivadesign.com/wp-content/uploads/2013/04/Evening-Gowns-23.jpg"
+    },
+    {
+        "id": "015",
+        "category": "gown",
+        "name": "NMD_R1 SHOE",
+        "price": 260,
+        "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/815YbzmYOCL.jpg"
+    },
+    {
+        "id": "016",
+        "category": "gown",
+        "name": "NMD_R1 SHOE",
+        "price": 260,
+        "imgUrl": "https://i.pinimg.com/originals/bf/9a/09/bf9a09abb38adb40b07029961095f86d.jpg"
+        
+    },
+    {
+        "id": "017",
+        "category": "gown",
+        "name": "NMD_R1 SHOE",
+        "price": 260,
+        "imgUrl": "https://ae01.alicdn.com/kf/HLB1qRzIXsnrK1RkHFrdq6xCoFXaV/New-Chiffon-Embroidery-Peacock-Masquerade-Bridesmaid-Formal-Long-Prom-Gowns-Dresse-summer-Strapless-formal-party-a.jpg"
+    },
+
+    {
+        "id": "018",
+        "category": "Women black dress",
+        "name": "gown",
+        "seller": "Addidas",
+        "price": 260,
+        "stock": 4,
+        "ratings": 5,
+        "ratingsCount": 1976,
+        "imgUrl": "https://i.pinimg.com/originals/bf/9a/09/bf9a09abb38adb40b07029961095f86d.jpg",
+        "shipping": 46,
+        "quantity": 0
+    }
+
+]

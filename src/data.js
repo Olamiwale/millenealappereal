@@ -59,65 +59,7 @@ export const product = [
       name: 'Italian Leather Bag',
       category: 'women',
       price: 234  
-    },
-    {
-      id: '00146',
-      imgUrl: 'https://i5.walmartimages.com/asr/e61beef9-f050-4dac-87b7-76f2d6708423_1.3e2b998380c08dd5e707e3c5c253f29d.jpeg',
-      name: 'Women Leather Bag',
-      category: 'bag',
-      price: 234 
-    },
-    {
-      id: '00132',
-      imgUrl: 'https://www.nairaland.com/attachments/12729014_decdress139_jpege3e7339fe4910613d168d792f79eef84',
-      name: 'Stylish Evening Dress',
-      category: 'men',
-      price: 234,
-      description:'The SOMBRA bodysuit is a sculptural masterpiece and is back in our signature KAVA print. Playing on the delicate nature of organza and the textural appeal of pleats, this style was inspired by the unique patterns and proportions of mushroom caps. The SOMBRA bodysuit features an inner knit leotard layer with a convenient snap closure. Confidently pair the SOMBRA bodysuit with the LOTI DRAPE PANTS.' 
-    },
-    {
-      id: '00123',
-      imgUrl: 'https://4.bp.blogspot.com/-dzC-SpK_PL4/XKIgoPg0FtI/AAAAAAAAA8w/SO8W-i38uZElaS5iJLhs2VyPk9Xt3DfsgCLcBGAs/s1600/ankara%2Bana%2Baso%2Bebi%2Bstyles%2B%252861%2529.jpg',
-      name: 'Beautiful Ankara Dress',
-      category: 'women',
-      price: 234,
-      description:'The SOMBRA bodysuit is a sculptural masterpiece and is back in our signature KAVA print. Playing on the delicate nature of organza and the textural appeal of pleats, this style was inspired by the unique patterns and proportions of mushroom caps. The SOMBRA bodysuit features an inner knit leotard layer with a convenient snap closure. Confidently pair the SOMBRA bodysuit with the LOTI DRAPE PANTS.'
-    },
-    {
-      id: '00146',
-      imgUrl: 'https://i5.walmartimages.com/asr/e61beef9-f050-4dac-87b7-76f2d6708423_1.3e2b998380c08dd5e707e3c5c253f29d.jpeg',
-      name: 'Women Leather Bag',
-      category: 'women',
-      price: 234 
-    },
-    {
-      id: '0550146',
-      imgUrl: 'https://i5.walmartimages.com/asr/e61beef9-f050-4dac-87b7-76f2d6708423_1.3e2b998380c08dd5e707e3c5c253f29d.jpeg',
-      name: 'Women Leather Bag',
-      category: 'women',
-      price: 234 
-    },
-    {
-      id: '001346',
-      imgUrl: 'https://i5.walmartimages.com/asr/e61beef9-f050-4dac-87b7-76f2d6708423_1.3e2b998380c08dd5e707e3c5c253f29d.jpeg',
-      name: 'Women Leather Bag',
-      category: 'women',
-      price: 234 
-    },
-    {
-      id: '004146',
-      imgUrl: 'https://i5.walmartimages.com/asr/e61beef9-f050-4dac-87b7-76f2d6708423_1.3e2b998380c08dd5e707e3c5c253f29d.jpeg',
-      name: 'Women Leather Bag',
-      category: 'men',
-      price: 234 
-    },
-    {
-      id: '005146',
-      imgUrl: 'https://i5.walmartimages.com/asr/e61beef9-f050-4dac-87b7-76f2d6708423_1.3e2b998380c08dd5e707e3c5c253f29d.jpeg',
-      name: 'Women Leather Bag',
-      category: 'women',
-      price: 234 
-    },
+    }, 
   ];
 
 
@@ -151,7 +93,6 @@ export const moreProduct = [
       name: 'Italian Leather Bag',
       category: 'bag',
       price: 234  
-    },
-   
+    }, 
   ];
   

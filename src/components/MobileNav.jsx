@@ -15,7 +15,7 @@ const navigate = useNavigate();
           <a onClick={() => navigate('/')} className="hover:underline cursor-pointer">Home</a>
         </li>
         <li className="my-4">
-          <a href="/shop" className="hover:underline">Shop</a>
+          <a href="/product" className="hover:underline">Product</a>
         </li>
         <li className="my-4">
           <a href="/about" className="hover:underline">About</a>

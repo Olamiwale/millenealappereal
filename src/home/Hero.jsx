@@ -1,4 +1,5 @@
 import React from 'react';
+import Swipper from '../components/Swipper';
 
 
 export default function Hero({bgImg}) {
@@ -8,6 +9,8 @@ export default function Hero({bgImg}) {
         <img 
         src={bgImg} 
         className='w-full h-auto object-cover ' />
+
+      
     </div>
   )
 }

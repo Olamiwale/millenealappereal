@@ -1,19 +1,23 @@
 import { useParams } from "react-router-dom";
 import {useEffect} from "react";
-import { product } from "../data";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../redux/actions";
+
+import Data from '../products.json'
 import MoreProducts from "./MoreProducts";
 import Accordion from "../components/Accordion";
 
-export default function ProductDetails({ img, title }) {
+export default function ProductDetails() {
   const { id } = useParams();
 
-  const item = product.find((item) => item.id === id);
+  const item = Data.find((item) => item.id === id);
 
   useEffect(() => {
-    
-  
     return () => { }
   }, [])
+
+  const dispatch = useDispatch();
+
   
 
   return (
@@ -69,7 +73,10 @@ export default function ProductDetails({ img, title }) {
                 <li className="border-[2px] border-black/40 py-2 px-6">xl</li>
                 <li className="border-[2px] border-black/40 py-2 px-6">xxl</li>
             </ul>
-             <button className="mt-10 w-full bg-black p-3 text-white text-xl uppercase">Add to cart</button>
+             <button 
+             className="mt-10 w-full bg-black p-3 text-white text-xl uppercase"
+             onClick={() => dispatch(addToCart(item))}
+             >Add to cart</button>
         </div>
 
         <div className="">

@@ -2,11 +2,11 @@ import { useState } from 'react';
 import {links} from '../data'
 
 const collections = [
-  { name: "Collections", links: ["Link1", "Link2", "Link3"] },
-  { name: "Collection1", links: ["Link1", "Link2"] },
-  { name: "Collection2", links: ["Link1", "Link2", "Link3", "Link4"] },
-  { name: "Collection2", links: ["Link1", "Link2", "Link3", "Link4"] },
-  { name: "Collection2", links: ["Link1", "Link2", "Link3", "Link4"] },
+  { name: "Home", links: ["Link1", "Link2", "Link3"] },
+  { name: "Product", links: ["Link1", "Link2"] },
+  { name: "About", links: ["Link1", "Link2", "Link3", "Link4"] },
+  { name: "Services", links: ["Link1", "Link2", "Link3", "Link4"] },
+  { name: "Contact", links: ["Link1", "Link2", "Link3", "Link4"] },
   
 ];
 
@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <div className="justify-center items-center p-3 lg:flex hidden">
-      <ul className=" flex relative space-x-5 m-auto w-[900px] justify-center">
+      <ul className="flex relative space-x-5 m-auto w-[900px] justify-center">
         {collections.map((collection, index) => (
           <li
           className='relative'

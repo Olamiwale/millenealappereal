@@ -6,6 +6,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import { Provider } from 'react-redux';
 
 
 
@@ -15,6 +16,7 @@ import ProductDetails from './product/ProductDetails.jsx';
 import Contact from './contact/Contact.jsx';
 import Cart from './cart/Cart.jsx';
 import About from './about/About.jsx'
+import store from './redux/store.jsx';
 
 
 
@@ -35,13 +37,13 @@ const router = createBrowserRouter([
         path:'/product', element: <Product />
       },
       {
-        path:'/product/:id', element: <ProductDetails />
+        path:'/product/:id', element: <ProductDetails  />
       },
       {
         path:'/contact', element: <Contact />
       },
       {
-        path:'/cart', element: <Cart />
+        path:'/cart', element: <Cart  />
       },
       {
         path:'/about', element: <About />
@@ -54,6 +56,9 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <Provider store={store}>
+       <RouterProvider router={router} />
+    </Provider>
+   
   </StrictMode>,
 )

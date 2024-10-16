@@ -6,6 +6,7 @@ import { FaCartShopping } from "react-icons/fa6";
 import NavLink from "./NavLink";
 import { useNavigate } from "react-router-dom";
 import MobileNav from "./MobileNav";
+import { useSelector } from "react-redux";
 
 export default function Navbar() {
 
@@ -18,13 +19,12 @@ export default function Navbar() {
 
 
   const navigate = useNavigate();
+  const cartItems = useSelector((state) => state.cart.cartItems);
 
-  const handleItemClick = () => {
-    navigate('/cart');
-  };
+ 
 
   return (
-    <div className="sticky top-0 shadow-sm bg-white h-[135px]">
+    <div className="sticky top-0 shadow-sm bg-white h-[135px] z-50">
       <div className="flex bg-gray-400 justify-center p-3">
         <p className="font-bold">YOU FIRST SHIPPING ON ORDER COLLECTION</p>
       </div>
@@ -51,12 +51,19 @@ export default function Navbar() {
             </div>
           </div>
 
-          <div className="text-3xl font-bold">STORENAME</div>
+          <div className="text-3xl font-bold cursor-pointer" onClick={()=> navigate('/')}>STORENAME</div>
 
-          <div className="flex justify-center items-center gap-10">
+          <div className="flex justify-center items-center gap-10 cursor-pointer">
             <FaUser size={18} />
+
+            <div className="flex ">
+              
+              <FaCartShopping size={20} onClick={()=> navigate('/cart')} />
+              <p className={ cartItems.length === 0 ?'hidden' : "bg-green-400 ml-4 mt-[-5px] rounded-full text-sm w-4 h-5 text-center absolute"}>
+              {cartItems.length} </p>
+            </div>
             
-              <FaCartShopping size={18} onClick={handleItemClick} />
+              
         
           </div>
         </div>

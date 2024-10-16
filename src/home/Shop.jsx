@@ -1,15 +1,13 @@
 import React,{useState} from "react";
-import { product } from "../data";
+import Data from '../products.json'
+import { Link, useNavigate } from "react-router-dom";
+import { addToCart } from "../redux/actions";
+import { useDispatch } from "react-redux";
 
 
 export default function Shop() {
 
-  const [cartItems, setCartItems] = useState([]);
-
- 
-  const addToCart = (item) => {
-    setCartItems([...cartItems, item]);
-  };
+  const dispatch = useDispatch();
   
 
   return (
@@ -20,21 +18,22 @@ export default function Shop() {
       </div>
 
       <div className="grid lg:grid-cols-4 grid-cols-2 justify-between gap-6">
-        {product.map((item, id) => (
+        {Data.slice(0, 4).map((item, id) => (
           <div
             key={id}
-            className="flex flex-col justify-center items-center uppercase"
+            className="flex flex-col justify-center items-center uppercase shadow-md"
           >
-            <a onClick={() => handleItemClick(item)}
-              href={`/product/${item.id}`}>
-              <img src={item.imgUrl} className="h-[300px] w-full" />
+            <a href={`/product/${item.id}`}>
+              <img src={item.imgUrl} className="h-[300px] w-[250px] shadow-md shadow-black" />
             </a>
 
             <p className="py-3"> {item.name} </p>
             <p className="pb-3"> $ {item.price} </p>
             <button 
-            className="border-black/30 w-full p-3 border lg:hidden"
-            onClick={() => addToCart(item)}
+            className="w-full p-3 border bg-gray-200 hover:bg-gray-400"
+            onClick={() => dispatch(addToCart(item))}
+           
+
             >
               QUICK ADD
             </button>
@@ -43,9 +42,12 @@ export default function Shop() {
       </div>
 
       <div className="py-20">
-        <button className="bg-black text-white font-semibold p-3 px-8">
+        <Link to='/product'>
+         <button className="bg-black text-white font-semibold p-3 px-8">
           DISCOVER MORE
         </button>
+        </Link>
+       
       </div>
     </div>
   );

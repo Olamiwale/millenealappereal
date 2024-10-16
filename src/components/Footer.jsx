@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
-    <div className='grid lg:grid-cols-3 md:grid-cols-2  gap-20 justify-between p-8 md:px-20 md:py-40'>
+    <div className='grid lg:grid-cols-3 md:grid-cols-2  gap-20 justify-between p-8 bg-black text-white md:px-20 md:py-40'>
         
        
 
