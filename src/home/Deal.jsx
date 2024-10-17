@@ -1,20 +1,25 @@
-import React from 'react'
-import bg from '../assets/imagebg2.png'
+import React from "react";
+import bg from "../assets/imagebg2.png";
+import dealBg from "../assets/deal.png";
 
 export default function Deal() {
   return (
-    <div className='flex flex-col justify-center items-center md:border-b-[1px] border-t-[1px] border-black/20'>
+    <div className="flex flex-col justify-between items-center bg-gradient-to-r from-gray-200 to-gray-300">
+
+
+      <div className="flex items-center">
         
-        <div className='flex flex-col md:flex-row justify-center  w-full items-center'>
-            <div className='w-1/2 uppercase text-3xl flex flex-col justify-center items-center py-20'>
-           <p>any advert / deal name </p>
-        </div>
-        <div className='bg-blue-400 md:w-1/2 w-full'>
-            <img src={bg} className='w-full h-[400px]' />
-        </div> 
-        </div>
-       
-       
+          <img src={dealBg} className="w-64" alt="Product" />
+          <div>
+            <p className="bg-white mb-10 uppercase text-red-500 p-4 rounded-tr-[10px] rounded-bl-[10px] font-bold">Deal of the week</p>
+            <p>Deal of the week</p>
+            
+            <button className="bg-red-500 px-5 p-2 rounded-lg text-white uppercase font-bold tracking-wide">%50 off</button>
+          </div>
+          
+      </div>
+
+     
     </div>
-  )
+  );
 }

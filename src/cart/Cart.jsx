@@ -8,8 +8,8 @@ export default function Cart() {
   const dispatch = useDispatch();
 
   return (
-    <div className="p-5">
-      <div className=" text-xl flex justify-center m-auto font-semibold text-white bg-gray-600 w-fit p-2">
+    <div className="p-5 pt-10">
+      <div className=" md:text-xl text-sm flex justify-center m-auto font-semibold text-black bg-gray-100 w-fit p-2">
         {cartItems.length === 0
           ? "You have no items in your Cart"
           : cartItems.length === 1
@@ -24,14 +24,14 @@ export default function Cart() {
           className="bg-gray-100 rounded-md p-2 m-10 flex justify-between items-center"        >
           <img
             src={item.imgUrl}
-            className="w-[100px] h-[120px] rounded-md"
+            className="md:w-[100px] w-16 md:h-[120px] rounded-md"
             alt={item.name}
           />
-          <p className="font-bold">{item.name}</p>
+          <p className="font-bold md:text-xl text-sm">{item.name}</p>
           <p>$ {item.price}</p>
 
           <button
-            className="bg-red-600 p-2 rounded-md text-white font-bold"
+            className="bg-red-600 text-sm p-2 rounded-md text-white font-bold"
             onClick={() => dispatch(removeFromCart(item.id))}
           >
             Remove

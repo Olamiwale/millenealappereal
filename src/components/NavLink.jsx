@@ -10,7 +10,7 @@ const collections = [
   
 ];
 
-const Navbar = () => {
+export default function Navbar () {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
@@ -46,4 +46,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+

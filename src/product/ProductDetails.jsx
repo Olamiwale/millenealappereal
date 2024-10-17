@@ -21,8 +21,8 @@ export default function ProductDetails() {
   
 
   return (
-    <div className="p-5">
-    <div className="flex md:flex-row flex-col justify-between pt-[40px] gap-20">
+    <div>
+    <div className="p-8 my-8 flex md:flex-row flex-col justify-between pt-[40px] gap-20">
 
       <div className="flex md:flex-row flex-col justify-evenly items-start md:w-1/2">
      

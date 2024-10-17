@@ -24,8 +24,8 @@ export default function Navbar() {
  
 
   return (
-    <div className="sticky top-0 shadow-sm bg-white h-[135px] z-50">
-      <div className="flex bg-gray-400 justify-center p-3">
+    <div className="sticky top-0 shadow-lg bg-gray-100 h-[135px] z-50">
+      <div className="flex bg-yellow-300 justify-center p-3">
         <p className="font-bold">YOU FIRST SHIPPING ON ORDER COLLECTION</p>
       </div>
 
@@ -34,8 +34,8 @@ export default function Navbar() {
           <div>
             <div className="lg:hidden flex gap-10">
              {!toggle ? 
-             <FaBars onClick={nav} size={18} /> : 
-             <FaXmark onClick={nav} size={18} />  }
+             <FaBars onClick={nav} size={20} /> : 
+             <FaXmark onClick={nav} size={20} />  }
 
               <FaMagnifyingGlass size={18} />
             </div>
@@ -54,7 +54,7 @@ export default function Navbar() {
           <div className="text-3xl font-bold cursor-pointer" onClick={()=> navigate('/')}>STORENAME</div>
 
           <div className="flex justify-center items-center gap-10 cursor-pointer">
-            <FaUser size={18} />
+            <FaUser size={20} />
 
             <div className="flex ">
               
