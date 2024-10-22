@@ -14,7 +14,7 @@ export default function About () {
         <section className="flex flex-col items-center mb-12 w-1/2">
         
           <img 
-            src="https://via.placeholder.com/150" 
+            src="./image.png" 
             alt="Jane Doe" 
             className="rounded-full mb-4" 
           />
@@ -23,9 +23,9 @@ export default function About () {
         </section>
 
         <section className="mb-12 w-1/2 flex flex-col justify-center items-center">
-          <h2 className="text-2xl font-semibold mb-4">Our Story</h2>
-          <p className="text-gray-700 mb-4">
-            Founded by fashion enthusiast Jane Doe, our eCommerce platform emerged from a passion for making stylish, high-quality clothing accessible to everyone. After years of working in the fashion industry, Jane envisioned a space where individuals could express their unique styles effortlessly. Our collections are carefully curated to reflect the latest trends while prioritizing comfort and affordability, making fashion enjoyable for all. We believe that everyone deserves to look and feel their best, and we’re committed to empowering our customers through our diverse range of products.
+          <h2 className="text-xl font-semibold mb-4">Our Story</h2>
+          <p className="text-gray-700 text-[10px] mb-4">
+            Founded by fashion enthusiast Jane Doe
           </p>
         </section>
 

@@ -22,30 +22,21 @@ export default function ProductDetails() {
 
   return (
     <div>
-    <div className="p-8 my-8 flex md:flex-row flex-col justify-between pt-[40px] gap-20">
+    <div className="p-8 mb-8 flex md:flex-row flex-col justify-between pt-[40px] gap-20">
 
       <div className="flex md:flex-row flex-col justify-evenly items-start md:w-1/2">
-     
-         <ul className=" lg:flex flex-col hidden justify-center gap-3">
-            <li><img className="w-[70px]" src={item.imgUrl}/></li>
-            <li><img className="w-[70px]" src={item.imgUrl}/></li>
-            <li><img className="w-[70px]" src={item.imgUrl}/></li>
-            <li><img className="w-[70px]" src={item.imgUrl}/></li>
-            
-        </ul>
 
         <div className="text-2xl space-y-3 md:hidden mb-10">
-           <h1 className="font-bold text-3xl leading-[150%] tracking-[0.1em]">{item.name}</h1>
-           <p className="font-bold"> STAR RATING</p>
-           <p> $ {item.price}</p> 
+           <h1 className="font-bold text-xl tracking-[0.5px]">{item.name}</h1>
+           <p className="text-md"> $ {item.price}</p> 
         </div>
 
        
      
-       <div className="md:ml-4">
+       <div className="md:ml-4 flex justify-center">
         <img 
         src={item.imgUrl} 
-        className="lg:w-[500px] lg:h-[550px] md:w-[380px]" 
+        className="lg:w-[500px] lg:h-[550px] md:w-[380px] w-1/2" 
         alt={item.name} />
         </div>
         
@@ -61,17 +52,17 @@ export default function ProductDetails() {
            <p> $ {item.price}</p> 
         </div>
 
-        <div className="mt-[20px] md:mt-0 flex flex-col justify-center items-center md:items-start uppercase leading-5 md:w-fit">
+        <div className="mt-[20px] md:mt-0  flex flex-col md:justify-center  md:items-start uppercase leading-5 md:w-fit">
           <div className="w-full"> 
             <p className="underline py-4 font-bold">What's my size</p>
             </div>
            
             <ul className="text-2xl flex font-thin w-fit gap-4 lg:gap-5">
-                <li className="border-[2px] border-black/40 py-2 px-6" >s</li>
-                <li className="border-[2px] border-black/40 py-2 px-6">m</li>
-                <li className="border-[2px] border-black/40 py-2 px-6">l</li>
-                <li className="border-[2px] border-black/40 py-2 px-6">xl</li>
-                <li className="border-[2px] border-black/40 py-2 px-6">xxl</li>
+                <li className="border-[2px] border-black/40 py-2 text-center w-[40px] font-medium text-[15px]" >s</li>
+                <li className="border-[2px] border-black/40 py-2 text-center w-[40px] font-medium text-[15px]">m</li>
+                <li className="border-[2px] border-black/40 py-2 text-center w-[40px] font-medium text-[15px]">l</li>
+                <li className="border-[2px] border-black/40 py-2 text-center w-[40px] font-medium text-[15px]">xl</li>
+                <li className="border-[2px] border-black/40 py-2 text-center w-[40px] font-medium text-[15px]">xxl</li>
             </ul>
              <button 
              className="mt-10 w-full bg-black p-3 text-white text-xl uppercase"
@@ -79,11 +70,7 @@ export default function ProductDetails() {
              >Add to cart</button>
         </div>
 
-        <div className="">
-          <p><i>Receive by Thur, 10th Oct  -  Mon, 14th Oct</i></p>
-          <p><i>Subscribe to our mailing list for additional 15% OFF </i></p>
-        </div>
-       
+             
         <div className="flex flex-col">
 
          

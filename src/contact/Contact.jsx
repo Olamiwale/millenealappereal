@@ -28,7 +28,7 @@ export default function Contact () {
             alt="Contact us"
             className="rounded-full mb-6 w-48 h-48 object-cover"
           />
-          <h2 className="text-white text-2xl font-bold mb-4">Get in Touch</h2>
+          <h2 className="text-white text-xl font-bold mb-4">Get in Touch</h2>
           <p className="text-white mb-6">Follow us on social media</p>
           <div className="flex space-x-4">
             <a href="#" className="text-white hover:text-gray-200 transition-colors">
@@ -45,9 +45,9 @@ export default function Contact () {
 
       
         <div className="w-full md:w-1/2 p-8">
-          <h1 className="text-3xl font-bold mb-6 text-blue-600 text-center uppercase">Contact Us</h1>
+          <h1 className="text-xl font-bold mb-6 text-slate-900 text-center uppercase">Contact Us</h1>
           <form onSubmit={handleSubmit} className="space-y-6">
-            <div>
+            <div className='text-[12px]'>
               <label className="block mb-1 font-medium text-gray-700">Name</label>
               <input
                 type="text"
@@ -87,7 +87,7 @@ export default function Contact () {
 
             <button
               type="submit"
-              className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition-colors duration-300 uppercase font-semibold"
+              className="w-full bg-slate-900 text-white py-2 rounded-md hover:bg-blue-600 transition-colors duration-300 uppercase font-semibold"
             >
               Send Message
             </button>

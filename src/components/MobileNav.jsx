@@ -9,7 +9,7 @@ const navigate = useNavigate();
     <div>
      
     <div
-      className='lg:hidden fixed top-40 left-0 h-full w-1/3 bg-white p-5 transform transition-transform duration-1000 ease-in-out'>
+      className='lg:hidden fixed top-40 left-0 h-full w-2/3 bg-white p-5 transform transition-transform duration-1000 ease-in-out'>
       <ul className='flex flex-col justify-center items-center'>
         <li className="my-4">
           <a onClick={() => navigate('/')} className="hover:underline cursor-pointer">Home</a>

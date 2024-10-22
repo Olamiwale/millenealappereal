@@ -12,30 +12,30 @@ export default function MoreProduct() {
   }
 
   useEffect(()=>{
-    setRandom(getRandomItems(Data, 4))
+    setRandom(getRandomItems(Data, 3))
   }, [])
 
 
   return (
-    <div className="p-8 my-8 flex justify-center bg-gray-100 flex-col items-center mt-[80px]">
-      <div className="justify-center items-center flex flex-col uppercase pb-20 pt-10">
-        <p className="font-bold text-3xl">you may also like this</p>
+    <div className="p-8 flex justify-center flex-col items-center">
+      <div className="justify-center items-center flex flex-col uppercase">
+        <p className="font-bold text-sm border-2 p-3 mb-3">you may also like this</p>
      
       </div>
 
-      <div className="grid md:grid-cols-4 grid-cols-2 justify-between gap-4">
+      <div className="grid md:grid-cols-4 grid-cols-3 justify-between gap-4">
         {random.map((item, id) => (
           <div
             key={id}
-            className="flex flex-col justify-center shadow-lg shadow-gray-400 items-center " >
-            <a className="h-[200px]"
+            className="flex flex-col justify-center p-5 " >
+            <a className="h-[150px]"
               onClick={() => handleItemClick(item)}
               href={`/product/${item.id}`}>
               <img src={item.imgUrl} className="w-full h-full" />
             </a>
 
-            <p className="py-3"> {item.name} </p>
-            <p className="pb-2"> $ {item.price} </p>
+            <p className="py-3 text-[10px]"> {item.name} </p>
+           
            
           </div>
         ))}

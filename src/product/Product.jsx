@@ -62,23 +62,22 @@ export default function Product() {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {filteredProducts.length > 0 ? (
           filteredProducts.map((item) => (
-            <div key={item.id} className="bg-white p-4 shadow-lg rounded-lg">
-              <img
+            <div key={item.id} className="bg-white p-4  rounded-lg">
+              <a  href={`/product/${item.id}`}>
+                <img
                 src={item.imgUrl}
                 alt={item.name}
                 className="w-full h-48 object-cover mb-4 rounded"
-              />
-              <h2 className="text-lg font-semibold mb-2">{item.name}</h2>
-              <p className="text-gray-600">${item.price}</p>
-              <a
-                onClick={() => navigate(`/product/${item.id}`)}
-                className="block mt-4 text-blue-500 hover:underline cursor-pointer"
-              >
-                View Product
+               
+              /> 
               </a>
+             
+              <h2 className="text-[8px] font-semibold">{item.name}</h2>
+              <p className="text-gray-600 font-bold text-[8px]">${item.price}</p>
+        
             </div>
           ))
         ) : (
