@@ -49,7 +49,11 @@ export default function Shop() {
       </a>
 
       <div className="p-5">
-         <img src="https://th.bing.com/th/id/OIP.IF01EeLO8SKBhDDzuGMTPQHaLH?rs=1&pid=ImgDetMain" />
+
+        <div className="flex justify-center">
+           <img src="https://i.pinimg.com/originals/ac/62/16/ac6216b513457c0db1d9a3db4f9e4920.jpg" />
+        </div>
+        
 
          <div className="flex w-full justify-center">
           <h2 className="text-center border-2 border-slate-900 mt-10 w-fit p-4 text-xl font-bold uppercase"> top Women blouse</h2>

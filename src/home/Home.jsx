@@ -6,7 +6,7 @@ import Shop from './Shop';
 export default function Home() {
   return (
     <div>
-     <Hero bgImg='https://th.bing.com/th/id/OIP.wqECj1QABGETCoVzBRpEKAAAAA?rs=1&pid=ImgDetMain'/>
+     <Hero bgImg='https://www.etam.co.uk/on/demandware.static/-/Sites-ELIN-master/default/dwe9718f04/654346205_x.jpg'/>
       <Shop />
   
     </div>
