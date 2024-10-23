@@ -6,6 +6,7 @@ import { FaCartShopping } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 import MobileNav from "./MobileNav";
 import { useSelector } from "react-redux";
+import logo from '../assets/logo.png'
 
 export default function Navbar() {
   const [toggle, setToggle] = useState(false);
@@ -23,7 +24,7 @@ export default function Navbar() {
         <p className="font-bold text-[10px] text-gray-50 tracking-wider">YOU FIRST SHIPPING ON ORDER COLLECTION</p>
       </div>
 
-      <div className="pt-5 lg:pt-6  px-10">
+      <div className=" container mx-auto p- px-10  md:px-32">
         <div className="flex justify-between items-center ">
           <div>
             <div className="lg:hidden flex gap-10">
@@ -47,7 +48,7 @@ export default function Navbar() {
 
           <a href="/">
             <img
-            src="./image.png "
+            src={logo}
             className="w-20"
           />
           </a>

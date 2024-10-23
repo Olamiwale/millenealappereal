@@ -52,7 +52,7 @@ export default function ProductDetails() {
            <p> $ {item.price}</p> 
         </div>
 
-        <div className="mt-[20px] md:mt-0  flex flex-col md:justify-center  md:items-start uppercase leading-5 md:w-fit">
+        <div className="mt-[20px] md:mt-0 flex flex-col md:justify-center  md:items-start uppercase leading-5 md:w-full">
           <div className="w-full"> 
             <p className="underline py-4 font-bold">What's my size</p>
             </div>
@@ -65,7 +65,7 @@ export default function ProductDetails() {
                 <li className="border-[2px] border-black/40 py-2 text-center w-[40px] font-medium text-[15px]">xxl</li>
             </ul>
              <button 
-             className="mt-10 w-full bg-black p-3 text-white text-xl uppercase"
+             className="mt-10 w-full bg-black p-3 text-white font-bold uppercase"
              onClick={() => dispatch(addToCart(item))}
              >Add to cart</button>
         </div>
@@ -81,11 +81,11 @@ export default function ProductDetails() {
 
           <div className="flex gap-2 justify-between mt-[40px] uppercase font-bold text-white">
 
-            <div className="p-3 bg-black/70 w-full flex items-center space-x-5 justify-center"> 
-            <p>Call to order</p>
+            <div className="p-3 bg-yellow-600 hover:bg-yellow-500 rounded-md w-full flex items-center space-x-5 justify-center"> 
+            <p>+23456789011</p>
             <img src="/phoneImg.png" className="w-8" />
               </div>
-            <div className="bg-green-500 w-full flex justify-center items-center space-x-5"> 
+            <div className="bg-green-600 hover:bg-green-500 rounded-md transition duration-500 cursor-pointer w-full flex justify-center items-center space-x-5"> 
               <p>Whatsapp</p>
               <img src="/whatsapp.png" className="w-8" />
               </div>

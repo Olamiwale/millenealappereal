@@ -32,7 +32,7 @@ export default function Shop() {
               </div>
             </div>
             <div
-              className="border-2 w-full flex items-center p-2 justify-center cursor-pointer"
+              className="uppercase border-2 w-full flex items-center p-2 justify-center cursor-pointer"
               onClick={() => dispatch(addToCart(item))}
             >
               Quick Add
