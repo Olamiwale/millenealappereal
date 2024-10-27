@@ -4,14 +4,14 @@
     {
         "id": "002",
         "name": "Product Name",
-        "imgUrl": "./image002.jpg",
+        "imgUrl": "../image.png",
         "shipping": 19,
         "quantity": 0
     },
     {
         "id": "003",
         "name": "Product Name",
-        "imgUrl": "./image003.jpg",
+        "imgUrl": "../image003.jpg",
         "shipping": 19,
         "quantity": 0
     },
