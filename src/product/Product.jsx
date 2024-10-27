@@ -38,26 +38,26 @@ export default function Product() {
 
         <div className=" flex justify-center">
           <button onClick={() => setFilteredCategory("")}
-            className={`p-2 mr-4 w-[80px] rounded ${!filteredCategory ? "bg-gray-800 text-white" : "bg-gray-400"}`}>
+            className={`p-2 mr-4 px-4 rounded text-sm ${!filteredCategory ? "bg-slate-800 text-white" : "bg-slate-400"}`}>
              All Products
           </button>
           <button
-            onClick={() => setFilteredCategory("Jumpsuite")}
-            className={`p-2 mr-4 rounded w-[80px] ${filteredCategory === "Wig" ? "bg-gray-800 text-white"
-                : "bg-gray-400"}`}>
+            onClick={() => setFilteredCategory("Jumpsuit")}
+            className={`p-2 mr-4 rounded px-4 text-sm ${filteredCategory === "Wig" ? "bg-slate-800 text-white"
+                : "bg-slate-400"}`}>
             Jumpsuit
           </button>
           <button
             onClick={() => setFilteredCategory("gown")}
-            className={`p-2 mr-4 rounded w-[80px] ${filteredCategory === "gown" ? "bg-gray-800 text-white"
-                : "bg-gray-400"}`}>
+            className={`p-2 mr-4 rounded text-sm px-4 ${filteredCategory === "gown" ? "bg-slate-800 text-white"
+                : "bg-slate-400"}`}>
             Gown
           </button>
         
         </div>
       </div>
 
-      <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-2">
         {filteredProducts.length > 0 ? (
           filteredProducts.map((item) => (
             <div key={item.id} className="bg-white p-4  rounded-lg">
