@@ -1,15 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
 
-
-export default function Hero({bgImg}) {
+export default function Hero() {
   return (
-    <div className='flex p-5 justify-center h-full items-center '>
-        
-        <img 
-        src={bgImg} 
-        className='w-full h-auto object-cover ' />
-
-      
+    <div className="flex flex-col  justify-center h-full items-center ">
+      <img src="./bimg.jpg" className="w-full h-auto object-cover " />
     </div>
-  )
+  );
 }

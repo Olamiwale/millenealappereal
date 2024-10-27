@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import logo from '../assets/logo.png'
 
 export default function Footer() {
   return (
@@ -9,7 +10,7 @@ export default function Footer() {
         
         <div>
           <h2 className="text-lg font-semibold">About Us</h2>
-          <img src='./image.png' className='w-16 rounded-full' />
+          <img src={logo} className='w-16 rounded-full' />
           <p className="text-[10px]">
             We provide quality products at the best prices.
           </p>

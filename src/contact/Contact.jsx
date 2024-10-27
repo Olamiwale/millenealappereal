@@ -22,11 +22,11 @@ export default function Contact () {
       <div className="flex flex-col md:flex-row bg-white shadow-lg rounded-lg overflow-hidden md:max-w-4xl m-5 w-full">
         
         
-        <div className="w-full md:w-1/2 bg-gray-400 p-8 flex flex-col items-center justify-center">
+        <div className="w-full md:w-1/2 bg-gray-400 flex flex-col items-center justify-center">
           <img
-            src="https://via.placeholder.com/300x300.png"
+            src="./image_003.jpg"
             alt="Contact us"
-            className="rounded-full mb-6 w-48 h-48 object-cover"
+            className="mb-6 w-full object-cover"
           />
           <h2 className="text-white text-xl font-bold mb-4">Get in Touch</h2>
           <p className="text-white mb-6">Follow us on social media</p>

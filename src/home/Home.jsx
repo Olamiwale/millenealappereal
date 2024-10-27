@@ -1,16 +1,29 @@
-import React from 'react';
-import Hero from './Hero';
-import Shop from './Shop';
-
+import React,{useEffect} from "react";
+import Hero from "./Hero";
+import Shop from "../shop/Shop.jsx";
+import VideoPlayer from "../components/VideoPlayer";
+import ShowRoom from '../components/ShowRoom.jsx';
+import Shops from '../shop/Shops.jsx'
 
 export default function Home() {
+
+  useEffect(() => {
+    window.scroll(0, 0);
+  
+  }, []);
+  
   return (
     <div>
-     <Hero bgImg='https://www.etam.co.uk/on/demandware.static/-/Sites-ELIN-master/default/dwe9718f04/654346205_x.jpg'/>
+      <Hero />
       <Shop />
-  
+      <VideoPlayer />
+      <Shops />
+      <ShowRoom />
+      
+      
+    
+      
     </div>
-  )
+  );
 }
-
-
+  

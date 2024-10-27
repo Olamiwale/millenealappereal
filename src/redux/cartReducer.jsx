@@ -32,6 +32,8 @@ const saveCartToLocalStorage = (cartItems) => {
   
       default:
         return state;
+
+        
     }
   };
   

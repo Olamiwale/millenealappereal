@@ -25,7 +25,7 @@ const Accordion = () => {
             }`}
           >
             <div className="p-4 bg-white">
-              <p>This is the content for Headingis the content for Headingis the content for Headingis the content for Headingis the content for Headingis the content for Headingis the content for Headingis the content for Headingis the content for Heading</p>
+              <p>No Detail for this product</p>
             </div>
           </div>
         </div>
@@ -45,7 +45,10 @@ const Accordion = () => {
             }`}
           >
             <div className="p-4 bg-white">
-              <p>This is the content for Headinis the content for Headingis the content for Headingis the content for Headingis the content for Headingis the content for Headingis the content for Headingis the content for Heading</p>
+              <p>
+
+Orders are processed within 2 business days. Standard shipping takes 5-7 business days. Expedited shipping options are available at checkout. International shipping times vary. Customers will receive a tracking number once the order is shipped.
+</p>
             </div>
           </div>
         </div>

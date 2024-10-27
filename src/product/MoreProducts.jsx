@@ -20,15 +20,14 @@ export default function MoreProduct() {
     <div className="p-8 flex justify-center flex-col items-center">
       <div className="justify-center items-center flex flex-col uppercase">
         <p className="font-bold text-sm border-2 p-3 mb-3">you may also like this</p>
-     
       </div>
 
-      <div className="grid md:grid-cols-4 grid-cols-3 justify-between gap-4">
+      <div className="grid grid-cols-3 justify-between gap-4">
         {random.map((item, id) => (
           <div
             key={id}
             className="flex flex-col justify-center p-5 " >
-            <a className="h-[150px]"
+            <a className="h-[150px] md:w-full md:h-[300px]"
               onClick={() => handleItemClick(item)}
               href={`/product/${item.id}`}>
               <img src={item.imgUrl} className="w-full h-full" />

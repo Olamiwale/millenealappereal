@@ -15,7 +15,6 @@ import Product from './product/Product.jsx';
 import ProductDetails from './product/ProductDetails.jsx';
 import Contact from './contact/Contact.jsx';
 import Cart from './cart/Cart.jsx';
-import About from './about/About.jsx'
 import store from './redux/store.jsx';
 
 
@@ -45,9 +44,7 @@ const router = createBrowserRouter([
       {
         path:'/cart', element: <Cart  />
       },
-      {
-        path:'/about', element: <About />
-      },
+     
       
       
     ]

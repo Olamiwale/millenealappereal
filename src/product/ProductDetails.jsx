@@ -28,7 +28,7 @@ export default function ProductDetails() {
 
         <div className="text-2xl space-y-3 md:hidden mb-10">
            <h1 className="font-bold text-xl tracking-[0.5px]">{item.name}</h1>
-           <p className="text-md"> $ {item.price}</p> 
+           <p className="text-md leading-3"> Price {item.price}</p> 
         </div>
 
        
@@ -36,7 +36,7 @@ export default function ProductDetails() {
        <div className="md:ml-4 flex justify-center">
         <img 
         src={item.imgUrl} 
-        className="lg:w-[500px] lg:h-[550px] md:w-[380px] w-1/2" 
+        className="lg:w-[500px] lg:h-[550px] md:w-[380px] w-full" 
         alt={item.name} />
         </div>
         
@@ -52,12 +52,12 @@ export default function ProductDetails() {
            <p> $ {item.price}</p> 
         </div>
 
-        <div className="mt-[20px] md:mt-0 flex flex-col md:justify-center  md:items-start uppercase leading-5 md:w-full">
+        <div className="md:mt-0 flex flex-col md:justify-center  md:items-start uppercase leading-5 md:w-full">
           <div className="w-full"> 
-            <p className="underline py-4 font-bold">What's my size</p>
+            <p className="underline py-4 font-bold">Available in size</p>
             </div>
            
-            <ul className="text-2xl flex font-thin w-fit gap-4 lg:gap-5">
+            <ul className="flex font-thin w-fit gap-4 lg:gap-5">
                 <li className="border-[2px] border-black/40 py-2 text-center w-[40px] font-medium text-[15px]" >s</li>
                 <li className="border-[2px] border-black/40 py-2 text-center w-[40px] font-medium text-[15px]">m</li>
                 <li className="border-[2px] border-black/40 py-2 text-center w-[40px] font-medium text-[15px]">l</li>

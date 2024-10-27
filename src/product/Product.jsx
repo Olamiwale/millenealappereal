@@ -39,13 +39,13 @@ export default function Product() {
         <div className=" flex justify-center">
           <button onClick={() => setFilteredCategory("")}
             className={`p-2 mr-4 w-[80px] rounded ${!filteredCategory ? "bg-gray-800 text-white" : "bg-gray-400"}`}>
-            All
+             All Products
           </button>
           <button
-            onClick={() => setFilteredCategory("Wig")}
+            onClick={() => setFilteredCategory("Jumpsuite")}
             className={`p-2 mr-4 rounded w-[80px] ${filteredCategory === "Wig" ? "bg-gray-800 text-white"
                 : "bg-gray-400"}`}>
-            Wig
+            Jumpsuit
           </button>
           <button
             onClick={() => setFilteredCategory("gown")}
@@ -53,12 +53,7 @@ export default function Product() {
                 : "bg-gray-400"}`}>
             Gown
           </button>
-          <button
-            onClick={() => setFilteredCategory("Bag")}
-            className={`p-2 rounded w-[80px] ${filteredCategory === "Bag"
-                ? "bg-gray-800 text-white" : "bg-gray-400"}`}>
-            Bag
-          </button>
+        
         </div>
       </div>
 
