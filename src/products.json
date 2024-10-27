@@ -11,42 +11,42 @@
     {
         "id": "003",
         "name": "Product Name",
-        "imgUrl": "../image003.jpg",
+        "imgUrl": "../image003.png",
         "shipping": 19,
         "quantity": 0
     },
     {
         "id": "004",
         "name": "Product Name",
-        "imgUrl": "./image004.jpg",
+        "imgUrl": "./image004.png",
         "shipping": 19,
         "quantity": 0
     },
     {
         "id": "006",
         "name": "Product Name",
-        "imgUrl": "../src/assets/image/image006.jpg",
+        "imgUrl": "./image006.png",
         "shipping": 19,
         "quantity": 0
     },
     {
         "id": "007",
         "name": "Product Name",
-        "imgUrl": "../src/assets/image/image007.jpg",
+        "imgUrl": "./image007.png",
         "shipping": 19,
         "quantity": 0
     },
     {
         "id": "008",
         "name": "Product Name",
-        "imgUrl": "../src/assets/image/image008.jpg",
+        "imgUrl": "./image008.png",
         "shipping": 19,
         "quantity": 0
     },
     {
         "id": "009",
         "name": "Product Name",
-        "imgUrl": "../src/assets/image/image009.jpg",
+        "imgUrl": "./image009.png",
         "shipping": 19,
         "quantity": 0
     },
