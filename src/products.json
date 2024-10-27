@@ -1,34 +1,6 @@
 [  
     
-    
-    {
-        "id": "002",
-        "name": "Product Name",
-        "imgUrl": "../image.png",
-        "shipping": 19,
-        "quantity": 0
-    },
-    {
-        "id": "003",
-        "name": "Product Name",
-        "imgUrl": "../image003.png",
-        "shipping": 19,
-        "quantity": 0
-    },
-    {
-        "id": "004",
-        "name": "Product Name",
-        "imgUrl": "../image004.png",
-        "shipping": 19,
-        "quantity": 0
-    },
-    {
-        "id": "006",
-        "name": "Product Name",
-        "imgUrl": "../image006.png",
-        "shipping": 19,
-        "quantity": 0
-    },
+   
     {
         "id": "007",
         "name": "Product Name",
@@ -46,143 +18,128 @@
     {
         "id": "009",
         "name": "Product Name",
-        "imgUrl": "./image009.png",
+        "imgUrl": "../image009.png",
         "shipping": 19,
         "quantity": 0
     },
     {
         "id": "010",
         "name": "Product Name",
-        "imgUrl": "../src/assets/image/image010.jpg",
+        "imgUrl": "../image010.png",
         "shipping": 19,
         "quantity": 0
     },
     {
         "id": "011",
         "name": "Product Name",
-        "imgUrl": "../src/assets/image/image011.jpg",
+        "imgUrl": "../image011.png",
         "shipping": 19,
         "quantity": 0
     },
     {
         "id": "012",
         "name": "Product Name",
-        "imgUrl": "../src/assets/image/image012.jpg",
+        "imgUrl": "../image012.png",
         "shipping": 19,
         "quantity": 0
     },
     {
         "id": "013",
         "name": "Product Name",
-        "imgUrl": "../src/assets/image/image013.jpg",
+        "imgUrl": "../image013.png",
         "shipping": 19,
         "quantity": 0
     },
-    {
-        "id": "014",
-        "name": "Product Name",
-        "imgUrl": "../src/assets/image/image014.jpg",
-        "shipping": 19,
-        "quantity": 0
-    },
+
     {
         "id": "015",
         "name": "Product Name",
-        "imgUrl": "../src/assets/image/image015.jpg",
+        "imgUrl": "../image015.png",
         "shipping": 19,
         "quantity": 0
     },
-    {
-        "id": "016",
-        "name": "Product Name",
-        "imgUrl": "../src/assets/image/image016.jpg",
-        "shipping": 19,
-        "quantity": 0
-    },
+   
     {
         "id": "017",
         "name": "Product Name",
-        "imgUrl": "../src/assets/image/image017.jpg",
+        "imgUrl": "../image017.png",
         "shipping": 19,
         "quantity": 0
     },
     {
         "id": "018",
         "name": "Product Name",
-        "imgUrl": "../src/assets/image/image018.jpg",
+        "imgUrl": "../image018.png",
         "shipping": 19,
         "quantity": 0
     },
+   
     {
         "id": "019",
         "name": "Product Name",
-        "imgUrl": "../src/assets/image/image019.jpg",
-        "shipping": 19,
-        "quantity": 0
-    },
-    {
-        "id": "019",
-        "name": "Product Name",
-        "imgUrl": "../src/assets/image/image020.jpg",
+        "imgUrl": "../image020.png",
         "shipping": 19,
         "quantity": 0
     },
     {
         "id": "02034",
         "name": "Product Name",
-        "imgUrl": "../src/assets/image/image021.jpg",
+        "imgUrl": "../image021.png",
         "shipping": 19,
         "quantity": 0
     },
-    {
-        "id": "00532",
-        "name": "Product Name",
-        "imgUrl": "../src/assets/image/image022.jpg",
-        "shipping": 19,
-        "quantity": 0
-    },
+   
     {
         "id": "00545",
         "name": "Product Name",
-        "imgUrl": "../src/assets/image/image023.jpg",
+        "imgUrl": "../image023.png",
         "shipping": 19,
         "quantity": 0
     },
     {
         "id": "003455",
         "name": "Product Name",
-        "imgUrl": "../src/assets/image/image024.jpg",
+        "imgUrl": "../image024.png",
         "shipping": 19,
         "quantity": 0
     },
     {
         "id": "00445",
         "name": "Product Name",
-        "imgUrl": "../src/assets/image/image025.jpg",
+        "imgUrl": "../image025.png",
         "shipping": 19,
         "quantity": 0
     },
     {
         "id": "00235",
         "name": "Product Name",
-        "imgUrl": "../src/assets/image/image026.jpg",
+        "imgUrl": "../image026.png",
         "shipping": 19,
         "quantity": 0
     },
     {
         "id": "00335",
         "name": "Product Name",
-        "imgUrl": "../src/assets/image/image027.jpg",
+        "imgUrl": "../image027.png",
         "shipping": 19,
         "quantity": 0
     },
     {
         "id": "00345",
         "name": "Product Name",
-        "imgUrl": "../src/assets/image/image028.jpg",
+        "imgUrl": "../image032.png",
+        "shipping": 19,
+        "quantity": 0
+    },
+   
+    {
+        "id": "00345",
+        "name": "Product Name",
+        "imgUrl": "../image034.png",
         "shipping": 19,
         "quantity": 0
     }
+  
 
 
 ]
