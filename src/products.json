@@ -4,21 +4,21 @@
     {
         "id": "002",
         "name": "Product Name",
-        "imgUrl": "../src/assets/image/image002.jpg",
+        "imgUrl": "./image002.jpg",
         "shipping": 19,
         "quantity": 0
     },
     {
         "id": "003",
         "name": "Product Name",
-        "imgUrl": "../src/assets/image/image003.jpg",
+        "imgUrl": "./image003.jpg",
         "shipping": 19,
         "quantity": 0
     },
     {
         "id": "004",
         "name": "Product Name",
-        "imgUrl": "../src/assets/image/image004.jpg",
+        "imgUrl": "./image004.jpg",
         "shipping": 19,
         "quantity": 0
     },
