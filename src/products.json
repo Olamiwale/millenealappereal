@@ -18,28 +18,28 @@
     {
         "id": "004",
         "name": "Product Name",
-        "imgUrl": "./image004.png",
+        "imgUrl": "../image004.png",
         "shipping": 19,
         "quantity": 0
     },
     {
         "id": "006",
         "name": "Product Name",
-        "imgUrl": "./image006.png",
+        "imgUrl": "../image006.png",
         "shipping": 19,
         "quantity": 0
     },
     {
         "id": "007",
         "name": "Product Name",
-        "imgUrl": "./image007.png",
+        "imgUrl": "../image007.png",
         "shipping": 19,
         "quantity": 0
     },
     {
         "id": "008",
         "name": "Product Name",
-        "imgUrl": "./image008.png",
+        "imgUrl": "../image008.png",
         "shipping": 19,
         "quantity": 0
     },
