@@ -22,18 +22,21 @@ export default function Footer() {
         <div>
           <h2 className="text-lg pb-2 font-semibold ">Contact Us</h2>
           <ul className="space-y-1 text-[10px]">
-            <li>Email: support@ecommerce.com</li>
-            <li>Phone: +123 456 789</li>
-            <li>Address: 123 E-Commerce St, City</li>
+            <li>Email: Mapbyruby@gmail.com</li>
+            <li>Phone: +234 705 688 1825 </li>
+            <li>Address: 9B, Charles Ifeanyi, Lekki 1</li>
           </ul>
         </div>
 
       
         <div>
           <h2 className="text-lg pb-2 font-semibold">Follow Us</h2>
-          <ul className="flex md:flex-row flex-col space-y-2 text-[10px] md:space-x-4">
+          <ul className="flex md:flex-row flex-col md:space-y-0 space-y-2 text-[10px] md:space-x-4">
             <li><a href="#" className="hover:underline">Facebook</a></li>
-            <li><a href="#" className="hover:underline">Instagram</a></li>
+            <li>
+              <a href="https://www.instagram.com/mapbyruby/"
+                 target='_blank'
+              className="hover:underline">Instagram</a></li>
             <li><a href="#" className="hover:underline">Twitter</a></li>
             <li><a href="#" className="hover:underline">LinkedIn</a></li>
           </ul>
