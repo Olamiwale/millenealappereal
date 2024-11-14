@@ -38,24 +38,38 @@ export default function Product() {
 
         <div className=" flex justify-center">
           <button onClick={() => setFilteredCategory("")}
-            className={`p-2 mr-4 px-4 rounded text-sm ${!filteredCategory ? "bg-slate-800 text-white" : "bg-slate-400"}`}>
+            className={`p-2 mr-4 tracking-widest px-4 rounded ${!filteredCategory ? "bg-slate-800 text-white" : "bg-slate-400"}`}>
              All Products
           </button>
           <button
             onClick={() => setFilteredCategory("Jumpsuit")}
-            className={`p-2 mr-4 rounded px-4 text-sm ${filteredCategory === "Wig" ? "bg-slate-800 text-white"
+            className={`p-2 mr-4 tracking-widest rounded px-4 ${filteredCategory === "Jumpsuit" ? "bg-slate-800 text-white"
                 : "bg-slate-400"}`}>
             Jumpsuit
           </button>
           <button
             onClick={() => setFilteredCategory("gown")}
-            className={`p-2 mr-4 rounded text-sm px-4 ${filteredCategory === "gown" ? "bg-slate-800 text-white"
+            className={`p-2 mr-4 tracking-widest rounded px-4 ${filteredCategory === "gown" ? "bg-slate-800 text-white"
                 : "bg-slate-400"}`}>
             Gown
+          </button>
+          <button
+            onClick={() => setFilteredCategory("Two Piece")}
+            className={`p-2 mr-4 tracking-widest rounded px-4 ${filteredCategory === "Two Piece" ? "bg-slate-800 text-white"
+                : "bg-slate-400"}`}>
+            Two Piece
+          </button>
+          <button
+            onClick={() => setFilteredCategory("Trouser")}
+            className={`p-2 mr-4 tracking-widest rounded px-4 ${filteredCategory === "Trouser" ? "bg-slate-800 text-white"
+                : "bg-slate-400"}`}>
+            Trouser
           </button>
         
         </div>
       </div>
+
+
 
       <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-2">
         {filteredProducts.length > 0 ? (

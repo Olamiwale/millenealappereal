@@ -3,89 +3,92 @@
    
     {
         "id": "007",
-        "name": "Product Name",
+        "name": "Ashake",
         "imgUrl": "../image007.png",
-        "shipping": 19,
+        "imgUrl_1": "../image008.png",
+        "imgUrl_2": "../image009.png",
+        "imgUrl_3": "../image018.png",
+        "price": 85000,
         "quantity": 0
     },
     {
         "id": "008",
-        "name": "Product Name",
+        "name": "Ashake",
         "imgUrl": "../image008.png",
-        "shipping": 19,
+        "price": 19,
         "quantity": 0
     },
     {
         "id": "009",
-        "name": "Product Name",
+        "name": "Ashake",
         "imgUrl": "../image009.png",
-        "shipping": 19,
+        "price": 19,
         "quantity": 0
     },
     {
         "id": "010",
-        "name": "Product Name",
+        "name": "Lady Vero",
         "imgUrl": "../image010.png",
-        "shipping": 19,
+        "price": 85000,
         "quantity": 0
     },
     {
         "id": "011",
-        "name": "Product Name",
+        "name": "Cosmic",
         "imgUrl": "../image011.png",
-        "shipping": 19,
+        "price": 60000,
         "quantity": 0
     },
     {
         "id": "012",
         "name": "Product Name",
         "imgUrl": "../image012.png",
-        "shipping": 19,
+        "price": 19,
         "quantity": 0
     },
     {
         "id": "013",
         "name": "Product Name",
         "imgUrl": "../image013.png",
-        "shipping": 19,
+        "price": 19,
         "quantity": 0
     },
 
     {
         "id": "015",
-        "name": "Product Name",
+        "name": "Dahlie",
         "imgUrl": "../image015.png",
-        "shipping": 19,
+        "price": 70000,
         "quantity": 0
     },
    
     {
         "id": "017",
-        "name": "Product Name",
+        "name": "Jumpsuit",
         "imgUrl": "../image017.png",
-        "shipping": 19,
+        "price": 45000,
         "quantity": 0
     },
     {
         "id": "018",
-        "name": "Product Name",
+        "name": "Ashake",
         "imgUrl": "../image018.png",
-        "shipping": 19,
+        "price": 19,
         "quantity": 0
     },
    
     {
         "id": "019",
-        "name": "Product Name",
+        "name": "Ajoke",
         "imgUrl": "../image020.png",
-        "shipping": 19,
+        "price": 65000,
         "quantity": 0
     },
     {
         "id": "02034",
         "name": "Product Name",
         "imgUrl": "../image021.png",
-        "shipping": 19,
+        "price": 19,
         "quantity": 0
     },
    
@@ -93,53 +96,54 @@
         "id": "00545",
         "name": "Product Name",
         "imgUrl": "../image023.png",
-        "shipping": 19,
+        "price": 19,
         "quantity": 0
     },
     {
         "id": "003455",
         "name": "Product Name",
         "imgUrl": "../image024.png",
-        "shipping": 19,
+        "price": 19,
         "quantity": 0
     },
     {
         "id": "00445",
-        "name": "Product Name",
+        "name": "Ashake",
         "imgUrl": "../image025.png",
-        "shipping": 19,
+        "price": 19,
         "quantity": 0
     },
     {
         "id": "00235",
         "name": "Product Name",
         "imgUrl": "../image026.png",
-        "shipping": 19,
+        "price": 19,
         "quantity": 0
     },
     {
         "id": "00335",
         "name": "Product Name",
         "imgUrl": "../image027.png",
-        "shipping": 19,
+        "price": 19,
         "quantity": 0
     },
     {
         "id": "00345",
-        "name": "Product Name",
+        "name": "Orchid",
         "imgUrl": "../image032.png",
-        "shipping": 19,
-        "quantity": 0
+        "price": 95000,
+        "quantity": 0,
+        "details": "Monostrap, Corset Band Flare Dress "
     },
    
     {
         "id": "00345",
         "name": "Product Name",
         "imgUrl": "../image034.png",
-        "shipping": 19,
+        "price": 19,
         "quantity": 0
     }
   
-
-
 ]
+
+

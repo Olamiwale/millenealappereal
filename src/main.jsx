@@ -16,6 +16,7 @@ import ProductDetails from './product/ProductDetails.jsx';
 import Contact from './contact/Contact.jsx';
 import Cart from './cart/Cart.jsx';
 import store from './redux/store.jsx';
+import Services from './services/Services.jsx';
 
 
 
@@ -43,6 +44,9 @@ const router = createBrowserRouter([
       },
       {
         path:'/cart', element: <Cart  />
+      },
+      {
+        path:'/services', element: <Services  />
       },
      
       

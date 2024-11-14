@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.png';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -13,6 +14,16 @@ export default function Footer() {
           <img src={logo} className='w-16 rounded-full' />
           <p className="text-[10px]">
             We provide quality products at the best prices.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-lg font-semibold">Service Center</h2>
+        
+          <p className="text-[10px] hover:underline">
+            <a href='/services'> Shipping and Return Policy
+            </a>
+           
           </p>
         </div>
 
