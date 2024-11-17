@@ -18,25 +18,25 @@ export default function Shop() {
       </div>
 
       <div className="px-16 py-8 grid lg:grid-cols-4 grid-cols-2 bg-white gap-6">
-        {Data.slice(2, 6).map((item, id) => (
+        {Data.slice(1, 5).map((item, id) => (
           <div
             key={id}
             className="flex flex-col justify-center pb-5 items-center"
           >
             <a href={`/product/${item.id}`}>
               <img
-                src={item.imgUrl}
+                src={item.images[0]}
                 className=" lg:h-[350px] md:h-[250px] h-[250px] w-[300px]"
               />
             </a>
 
             <div className="flex justify-between items-center w-full mt-5 ">
               <div>
-                <p className="text-[10px] font-bold min-sm:pb-2-">
-                  {" "}
-                  {item.name}{" "}
+                <p className=" pb-2 tracking-wider font-bold min-sm:pb-2-">
+                  
+                  {item.name}
                 </p>
-                <p className="text-[10px] pb-2"> NGN {item.price} </p>
+                <p className="tracking-wider font-semibold pb-2"> NGN {item.price}.00 </p>
               </div>
               <div className="cursor-pointer"                
                 onClick={() => dispatch(addToCart(item))}

@@ -38,31 +38,31 @@ export default function Product() {
 
         <div className=" flex justify-center">
           <button onClick={() => setFilteredCategory("")}
-            className={`p-2 mr-4 tracking-widest px-4 rounded ${!filteredCategory ? "bg-slate-800 text-white" : "bg-slate-400"}`}>
-             All Products
+            className={`p-2 mr-4 tracking-widest px-4 rounded text-sm ${!filteredCategory ? "bg-slate-500 text-white" : "border"}`}>
+             All
           </button>
           <button
             onClick={() => setFilteredCategory("Jumpsuit")}
-            className={`p-2 mr-4 tracking-widest rounded px-4 ${filteredCategory === "Jumpsuit" ? "bg-slate-800 text-white"
-                : "bg-slate-400"}`}>
+            className={`p-2 mr-4 tracking-widest rounded text-sm px-4 ${filteredCategory === "Jumpsuit" ? "bg-slate-800 text-white"
+                : "border"}`}>
             Jumpsuit
           </button>
           <button
             onClick={() => setFilteredCategory("gown")}
-            className={`p-2 mr-4 tracking-widest rounded px-4 ${filteredCategory === "gown" ? "bg-slate-800 text-white"
-                : "bg-slate-400"}`}>
+            className={`p-2 mr-4 tracking-widest rounded text-sm px-4 ${filteredCategory === "gown" ? "bg-slate-800 text-white"
+                : "border"}`}>
             Gown
           </button>
           <button
             onClick={() => setFilteredCategory("Two Piece")}
-            className={`p-2 mr-4 tracking-widest rounded px-4 ${filteredCategory === "Two Piece" ? "bg-slate-800 text-white"
-                : "bg-slate-400"}`}>
+            className={`p-2 mr-4 tracking-widest text-sm rounded px-4 ${filteredCategory === "Two Piece" ? "bg-slate-800 text-white"
+                : "border"}`}>
             Two Piece
           </button>
           <button
             onClick={() => setFilteredCategory("Trouser")}
-            className={`p-2 mr-4 tracking-widest rounded px-4 ${filteredCategory === "Trouser" ? "bg-slate-800 text-white"
-                : "bg-slate-400"}`}>
+            className={`p-2 mr-4 tracking-widest text-sm rounded px-4 ${filteredCategory === "Trouser" ? "bg-slate-800 text-white"
+                : "border"}`}>
             Trouser
           </button>
         
@@ -77,15 +77,15 @@ export default function Product() {
             <div key={item.id} className="bg-white p-4  rounded-lg">
               <a  href={`/product/${item.id}`}>
                 <img
-                src={item.imgUrl}
+                src={item.images[0]}
                 alt={item.name}
                 className="w-full h-48 object-cover mb-4 rounded"
                
               /> 
               </a>
              
-              <h2 className="text-[8px] font-semibold">{item.name}</h2>
-              <p className="text-gray-600 font-bold text-[8px]">${item.price}</p>
+              <h2 className="font-semibold tracking-wider pb-2">{item.name}</h2>
+              <p className="text-gray-600 font-bold tracking-wider ">NGN {item.price}.00</p>
         
             </div>
           ))

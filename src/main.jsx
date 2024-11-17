@@ -17,6 +17,7 @@ import Contact from './contact/Contact.jsx';
 import Cart from './cart/Cart.jsx';
 import store from './redux/store.jsx';
 import Services from './services/Services.jsx';
+import Size from './size/Size.jsx';
 
 
 
@@ -47,6 +48,9 @@ const router = createBrowserRouter([
       },
       {
         path:'/services', element: <Services  />
+      },
+      {
+        path:'/size', element: <Size  />
       },
      
       

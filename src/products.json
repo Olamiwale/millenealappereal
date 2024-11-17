@@ -1,149 +1,99 @@
+
 [  
-    
-   
     {
-        "id": "007",
+        "id": "0083",
         "name": "Ashake",
-        "imgUrl": "../image007.png",
-        "imgUrl_1": "../image008.png",
-        "imgUrl_2": "../image009.png",
-        "imgUrl_3": "../image018.png",
+        "images": [
+           "../ashake.png", 
+           "../ashake01.png", 
+           "../ashake02.png", 
+           "../ashake04.png",
+           "../ashake05.png"
+           
+        ], 
         "price": 85000,
-        "quantity": 0
-    },
-    {
-        "id": "008",
-        "name": "Ashake",
-        "imgUrl": "../image008.png",
-        "price": 19,
-        "quantity": 0
-    },
-    {
-        "id": "009",
-        "name": "Ashake",
-        "imgUrl": "../image009.png",
-        "price": 19,
-        "quantity": 0
-    },
-    {
-        "id": "010",
-        "name": "Lady Vero",
-        "imgUrl": "../image010.png",
-        "price": 85000,
-        "quantity": 0
-    },
-    {
-        "id": "011",
-        "name": "Cosmic",
-        "imgUrl": "../image011.png",
-        "price": 60000,
-        "quantity": 0
-    },
-    {
-        "id": "012",
-        "name": "Product Name",
-        "imgUrl": "../image012.png",
-        "price": 19,
-        "quantity": 0
-    },
-    {
-        "id": "013",
-        "name": "Product Name",
-        "imgUrl": "../image013.png",
-        "price": 19,
+        "categories":"gown",
+        "description" : "nice outfit with nice shape",
         "quantity": 0
     },
 
     {
-        "id": "015",
-        "name": "Dahlie",
-        "imgUrl": "../image015.png",
-        "price": 70000,
-        "quantity": 0
-    },
-   
-    {
-        "id": "017",
-        "name": "Jumpsuit",
-        "imgUrl": "../image017.png",
-        "price": 45000,
-        "quantity": 0
-    },
-    {
-        "id": "018",
-        "name": "Ashake",
-        "imgUrl": "../image018.png",
-        "price": 19,
-        "quantity": 0
-    },
-   
-    {
-        "id": "019",
+        "id": "0089",
         "name": "Ajoke",
-        "imgUrl": "../image020.png",
+        "images": [
+           "../ajoke.png", 
+           "../ajoke03.png", 
+           "../ajoke04.png", 
+           "../ajoke05.png" 
+         
+          
+        ], 
         "price": 65000,
+        "categories":"gown",
+        "description" : "nice outfit with nice shape",
+        "quantity": 0
+    },
+
+    {
+        "id": "0088",
+        "name": "Cosmic",
+        "images": [
+           "../cosmic.png", 
+           "../cosmic.png",
+           "../cosmic.png",
+           "../cosmic.png"
+        ], 
+        "price": 60000,
+        "categories":"gown",
+        "description" : "nice outfit with nice shape",
         "quantity": 0
     },
     {
-        "id": "02034",
-        "name": "Product Name",
-        "imgUrl": "../image021.png",
-        "price": 19,
-        "quantity": 0
-    },
-   
-    {
-        "id": "00545",
-        "name": "Product Name",
-        "imgUrl": "../image023.png",
-        "price": 19,
-        "quantity": 0
-    },
-    {
-        "id": "003455",
-        "name": "Product Name",
-        "imgUrl": "../image024.png",
-        "price": 19,
+        "id": "0087",
+        "name": "Jumpsuit",
+        "images": [
+           "../jumpsuit.png", 
+           "../jumpsuit01.png", 
+           "../jumpsuit01.png", 
+           "../jumpsuit01.png"
+           
+          
+        ], 
+        "price": 45000,
+        "categories":"jumpsuit",
+        "description" : "nice outfit with nice shape",
         "quantity": 0
     },
     {
-        "id": "00445",
-        "name": "Ashake",
-        "imgUrl": "../image025.png",
-        "price": 19,
+        "id": "008557",
+        "name": "Lady Vero",
+        "images": [
+           "../lady-vero.png", 
+           "../lady-vero01.png", 
+           "../lady-vero02.png", 
+           "../lady-vero03.png"
+           
+          
+        ], 
+        "price": 45000,
+        "categories":"jumpsuit",
+        "description" : "nice outfit with nice shape",
         "quantity": 0
     },
     {
-        "id": "00235",
-        "name": "Product Name",
-        "imgUrl": "../image026.png",
-        "price": 19,
-        "quantity": 0
-    },
-    {
-        "id": "00335",
-        "name": "Product Name",
-        "imgUrl": "../image027.png",
-        "price": 19,
-        "quantity": 0
-    },
-    {
-        "id": "00345",
+        "id": "0086",
         "name": "Orchid",
-        "imgUrl": "../image032.png",
+        "images": [
+           "../orchid.png", 
+           "../orchid03.png", 
+           "../orchid04.png", 
+           "../orchid05.png"
+        ], 
         "price": 95000,
-        "quantity": 0,
-        "details": "Monostrap, Corset Band Flare Dress "
-    },
-   
-    {
-        "id": "00345",
-        "name": "Product Name",
-        "imgUrl": "../image034.png",
-        "price": 19,
+        "categories":"gown",
+        "description" : "nice outfit with nice shape",
         "quantity": 0
-    }
-  
+    }  
 ]
 
 

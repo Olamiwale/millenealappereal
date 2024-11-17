@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaBars, FaUser } from "react-icons/fa";
 import { FaXmark } from "react-icons/fa6";
 import { FaCartShopping } from "react-icons/fa6";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
 import logo from "../assets/logo.png";
 
@@ -16,6 +16,14 @@ export default function Navbar() {
   const navigate = useNavigate();
   const cartItems = useSelector((state) => state.cart.cartItems);
 
+
+  const location = useLocation()
+  function matchRoute (route) {
+    if(route === location.pathname){
+      return true
+    };
+  }
+
   return (
     <div className="sticky top-0 shadow-lg bg-slate-200 z-50">
       <div className="flex bg-slate-900 justify-center p-3">
@@ -24,10 +32,10 @@ export default function Navbar() {
         </p>
       </div>
 
-      <div className=" container mx-auto px-10  md:px-20">
+      <div className=" container mx-auto px-10 pb-5  md:px-20">
         <div className="flex justify-between items-center ">
           <div>
-            <div className="lg:hidden flex gap-10">
+            <div className="md:hidden flex gap-10">
               {!toggle ? (
                 <FaBars onClick={nav} size={20} />
               ) : (
@@ -37,7 +45,7 @@ export default function Navbar() {
 
             {/*<div>{toggle ? <MobileNav /> : ""}</div>*/}
 
-            <div className="lg:block hidden">
+            <div className="md:block hidden">
               <select className="p-2 rounded-lg text-[10px]">
                 <option>NGN</option>
                 <option>EUR</option>
@@ -47,7 +55,7 @@ export default function Navbar() {
           </div>
 
           <a href="/">
-            <img src={logo} className="w-20 md:w-32" />
+            <img src={logo} className="w-20 md:w-16" />
           </a>
 
           <div className="flex items-center lg:gap-[50px] gap-8">
@@ -82,9 +90,23 @@ export default function Navbar() {
             Contact
           </li>
           </ul> 
-      
 
-       
+
+          <div className="md:flex justify-center hidden ">
+            <ul className="flex space-x-10 ">
+              <li  className={`cursor-pointer font-semibold text-black ${
+                matchRoute("/") && "text-slate-400"
+              }`} onClick={() => navigate('/')} >Home</li>
+              <li  className={`cursor-pointer font-semibold text-black ${
+                matchRoute("/product") && "text-slate-400"
+              }`} onClick={() => navigate('/product')} >Shop</li>
+
+              <li  className={`cursor-pointer font-semibold text-black ${
+                matchRoute("/size") && "text-slate-400"
+              }`} onClick={() => navigate('/size')} >Size Chart</li>
+              
+            </ul>
+          </div>
 
       </div>
     </div>
