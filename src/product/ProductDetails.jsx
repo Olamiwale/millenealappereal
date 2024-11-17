@@ -41,7 +41,7 @@ export default function ProductDetails() {
           </div>
 
           <div className="md:ml-4 items-center flex-col-reverse md:flex-row flex justify-center">
-            <div className="flex md:flex-col gap-2 md:mr-5 bg-red-500 w-fit justify-center mt-5 ">
+            <div className="flex md:flex-col gap-2 md:mr-5 w-fit justify-center mt-5 ">
               {product.images.map((image, index) => (
                 <img
                   key={index}
