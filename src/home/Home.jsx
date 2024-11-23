@@ -5,7 +5,8 @@ import VideoPlayer from "../components/VideoPlayer";
 import ShowRoom from '../components/ShowRoom.jsx';
 import Shops from '../shop/Shops.jsx'
 
-export default function Home() {
+
+export default function Home({videoUrl}) {
 
   useEffect(() => {
     window.scroll(0, 0);
@@ -17,8 +18,10 @@ export default function Home() {
       <Hero />
       <Shop />
       <VideoPlayer />
-      <Shops />
-      <ShowRoom />
+       <Shops />
+    
+    
+      {/*<ShowRoom />*/}
       
       
     

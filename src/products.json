@@ -93,6 +93,20 @@
         "categories":"gown",
         "description" : "nice outfit with nice shape",
         "quantity": 0
+    },  
+    {
+        "id": "00864",
+        "name": "Orchids",
+        "images": [
+           "../newPro.jpg", 
+           "../newPro01.jpg", 
+           "../newPro02.jpg", 
+           "../newPro04.jpg"
+        ], 
+        "price": 70000,
+        "categories":"gown",
+        "description" : "nice outfit with nice shape",
+        "quantity": 0
     }  
 ]
 

@@ -19,7 +19,7 @@ export default function MoreProduct() {
   return (
     <div className="p-8 flex justify-center flex-col items-center">
       <div className="justify-center items-center flex flex-col uppercase">
-        <p className="font-bold text-sm border-2 p-3 mb-3">you may also like this</p>
+        <p className="font-semibold tracking-widest text-sm border-2 p-3 mb-3">related products</p>
       </div>
 
       <div className="grid grid-cols-3 justify-between gap-4">
@@ -30,7 +30,7 @@ export default function MoreProduct() {
             <a className="h-[150px] md:w-full md:h-[300px]"
               onClick={() => handleItemClick(item)}
               href={`/product/${item.id}`}>
-              <img src={item.imgUrl} className="w-full h-full" />
+              <img src={item.images[1]} className="w-full h-full" />
             </a>
 
             <p className="py-3 text-[10px]"> {item.name} </p>

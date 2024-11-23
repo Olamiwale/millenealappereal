@@ -23,13 +23,16 @@ export default function Cart() {
             className="bg-gray-100 rounded-md p-4 flex justify-between items-center"
           >
             <img
-              src={item.imgUrl}
+              src={item.images[0]}
               className="md:w-[100px] w-16 md:h-[120px] rounded-md"
               alt={item.name}
             />
             <p className="font-bold md:text-xl text-sm">{item.name}</p>
+            <p className="text-sm">Size: {item.size}</p> {/* Display size */}
+            <p className="text-sm">Size: {item.quantity}</p> {/* Display quatity */}
             <p>$ {item.price}</p>
-            <div className="flex items-center space-x-2">
+
+            {/*<div className="flex items-center space-x-2">
               <button
                 className="bg-gray-300 text-lg p-1 rounded-md"
                 onClick={() => dispatch(decreaseQuantity(item.id))}
@@ -43,7 +46,8 @@ export default function Cart() {
               >
                 +
               </button>
-            </div>
+            </div>*/}
+
             <button
               className="bg-red-600 text-sm p-2 rounded-md text-white font-bold"
               onClick={() => dispatch(removeFromCart(item.id))}
@@ -57,7 +61,9 @@ export default function Cart() {
       {cartItems.length > 0 && (
         <div className="max-w-[800px] m-auto flex justify-end mt-10">
           <button className="bg-green-600 text-white p-3 rounded-md font-bold">
-            Proceed to Checkout
+            <a href="/checkout"> 
+              Checkout
+            </a>
           </button>
         </div>
       )}

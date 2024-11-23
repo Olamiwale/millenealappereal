@@ -13,7 +13,11 @@ export default function ProductDetails() {
   const [product, setProduct] = useState(null);
   const [mainImage, setMainImage] = useState("");
 
-  //const item = Data.find((item) => item.id === id);
+
+  const [selectedSize, setSelectedSize] = useState('')
+  const [quantity, setQuantity] = useState('')
+
+ 
 
   useEffect(() => {
     const product = Data.find((item) => item.id === id);
@@ -29,15 +33,33 @@ export default function ProductDetails() {
 
   const dispatch = useDispatch();
 
-  return (
+
+  const handleAddToCart = () => {
+    if (!selectedSize) {
+      alert("Please select a size");
+      return;
+    }
+
+    const cartItem = {
+      ...product,
+      size: selectedSize, // Include selected size
+      quantity: quantity,
+    };
+
+    dispatch(addToCart(cartItem));
+  };
+
+
+
+  return ( 
     <div>
       <div className="p-8 mb-8 flex md:flex-row flex-col justify-between pt-[40px] gap-20">
         <div className="flex md:flex-row flex-col justify-evenly items-start md:w-1/2">
           <div className="text-2xl space-y-3 md:hidden mb-10">
-            <h1 className="font-bold text-xl tracking-[0.5px]">
+            <h1 className="font-bold text-xl tracking-widest">
               {product.name}
             </h1>
-            <p className="text-md leading-3"> NGN {product.price}</p>
+            <p className="text-xl tracking-widest leading-3"> ₦ {product.price}.00</p>
           </div>
 
           <div className="md:ml-4 items-center flex-col-reverse md:flex-row flex justify-center">
@@ -77,7 +99,7 @@ export default function ProductDetails() {
               <p className="underline py-4 font-bold">Available in size</p>
             </div>
 
-            <ul className="flex font-thin w-fit gap-4 lg:gap-5">
+           {/* <ul className="flex font-thin w-fit gap-4 lg:gap-5">
               <li className="border-[2px] border-black/40 py-2 text-center w-[40px] font-medium text-[15px]">
                 s
               </li>
@@ -93,28 +115,52 @@ export default function ProductDetails() {
               <li className="border-[2px] border-black/40 py-2 text-center w-[40px] font-medium text-[15px]">
                 xxl
               </li>
-            </ul>
+            </ul>*/}
+
+
+             <ul className="flex gap-3">
+              {["s", "m", "l", "xl", "xxl"].map((size) => (
+                <li
+                  key={size}
+                  className={`cursor-pointer border-[2px] border-black/40 py-2 text-center w-[40px] ${
+                    selectedSize === size ? "bg-black text-white" : ""
+                  }`}
+                  onClick={() => setSelectedSize(size)}>
+                  {size}
+                </li>
+              ))}
+             </ul>
+
+             <div className="pt-10">
+              <input type="number" className="border-2 p-3" value={quantity} onChange={(e)=>setQuantity(e.target.value)} />
+             </div>
+
+
+           { /* <button
+              className="mt-10 w-full bg-black p-3 text-white font-bold uppercase"
+              onClick={() => dispatch(addToCart(product))}>Add to cart
+            </button>*/}
+
             <button
               className="mt-10 w-full bg-black p-3 text-white font-bold uppercase"
-              onClick={() => dispatch(addToCart(product))}
-            >
-              Add to cart
+              onClick={handleAddToCart}>Add to cart
             </button>
+
           </div>
 
           <div className="flex flex-col">
-            <div className="bg-gray-100 ">
+            <div className="bg-gray-100">
               <Accordion />
             </div>
 
             <div className="flex gap-2 justify-between mt-[40px] uppercase font-bold text-white">
               <div className="p-3 bg-yellow-500 hover:bg-yellow-400 rounded-md w-full flex items-center space-x-5 justify-center">
-                <img src="/phoneImg.png" className="w-8" />
-                <p className="tracking-wider font-medium text-[14px]">
-                  Call to order{" "}
+                <img src="/phoneImg.png" className="w-4" />
+                <p className="tracking-wider font-medium text-sm">
+                  Call to order
                   <span className="tracking-widest font-bold">
-                    {" "}
-                    +234 703 382 1612{" "}
+                    
+                    +234 703 382 1612
                   </span>
                 </p>
               </div>
@@ -132,3 +178,4 @@ export default function ProductDetails() {
     </div>
   );
 }
+

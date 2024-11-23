@@ -1,35 +1,41 @@
-import React from "react";
-import VideoPlayer from "./VideoPlayer";
+import React, { useEffect, useState } from "react";
 
-export default function ShowRoom() {
+export default function Hero() {
   return (
-    <div>
-      
-      <div className=" mb-5">
-        <div className="flex justify-center">
-          <img src="./bimg2.png" />
-        </div>
+    <div className="relative w-full h-screen bg-black">
+    
+    <img
+      src="./newPro02.jpg"
+      alt="Luxury Collection"
+      className="absolute inset-0 w-full h-full object-cover opacity-80"
+    />
+  
+   
+    <div className="absolute inset-0"></div>
+  
 
-        <div className="flex w-full justify-center">
-          {/*<h2 className="text-center border-2 border-slate-900 mt-10 w-fit p-2  uppercase">
-            Best women gown
-          </h2>*/}
-        </div>
+    <div className="relative flex flex-col items-center justify-center text-center h-full px-4">
 
-        <div className="p-10 space-x-5 grid grid-cols-2">
-          <img src="./bimg3.jpg" />
-          <img src="./bimg4.jpg" />
-        </div>
-
-        <div className="flex justify-center">
-          <a
-            href="/product"
-            className="hover:bg-slate-800 w-fit flex justify-center bg-slate-900 item-center uppercase tracking-wider text-white text-[10px] rounded-sm font-bold p-4"
-          >
-            Discover more
-          </a>
-        </div>
+      <div className="bg-black/40 p-10 items-center flex flex-col rounded-md">
+       
+      <p className="mt-4 tracking-wider text-lg md:text-xl text-white max-w-xl">
+        Step into luxury with our finest collections and redefine your style with MapRuby
+      </p>
+  
+      <button className="mt-8 bg-yellow-500 w-[250px] text-black px-6 py-3 rounded-full text-lg font-semibold hover:bg-yellow-400 transition duration-500 ease-in-out transform hover:scale-105 shadow-lg">
+        <a href="/product">
+           Explore Now 
+        </a>
+       
+      </button>
       </div>
+      
     </div>
+  
+ 
+  </div>
+  
+   
   );
 }
+

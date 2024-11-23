@@ -18,6 +18,7 @@ import Cart from './cart/Cart.jsx';
 import store from './redux/store.jsx';
 import Services from './services/Services.jsx';
 import Size from './size/Size.jsx';
+import CheckOut from './checkout/CheckOut.jsx';
 
 
 
@@ -51,6 +52,9 @@ const router = createBrowserRouter([
       },
       {
         path:'/size', element: <Size  />
+      },
+      {
+        path:'/checkout', element: <CheckOut  />
       },
      
       
