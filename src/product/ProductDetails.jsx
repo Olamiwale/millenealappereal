@@ -99,25 +99,7 @@ export default function ProductDetails() {
               <p className="underline py-4 font-bold">Available in size</p>
             </div>
 
-           {/* <ul className="flex font-thin w-fit gap-4 lg:gap-5">
-              <li className="border-[2px] border-black/40 py-2 text-center w-[40px] font-medium text-[15px]">
-                s
-              </li>
-              <li className="border-[2px] border-black/40 py-2 text-center w-[40px] font-medium text-[15px]">
-                m
-              </li>
-              <li className="border-[2px] border-black/40 py-2 text-center w-[40px] font-medium text-[15px]">
-                l
-              </li>
-              <li className="border-[2px] border-black/40 py-2 text-center w-[40px] font-medium text-[15px]">
-                xl
-              </li>
-              <li className="border-[2px] border-black/40 py-2 text-center w-[40px] font-medium text-[15px]">
-                xxl
-              </li>
-            </ul>*/}
-
-
+          
              <ul className="flex gap-3">
               {["s", "m", "l", "xl", "xxl"].map((size) => (
                 <li
