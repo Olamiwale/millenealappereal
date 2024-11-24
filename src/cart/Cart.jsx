@@ -23,7 +23,7 @@ export default function Cart() {
             className="bg-gray-100 rounded-md p-4 flex justify-between items-center"
           >
             <img
-              src={item.images[0]}
+              src={item.images}
               className="md:w-[100px] w-16 md:h-[120px] rounded-md"
               alt={item.name}
             />
@@ -32,21 +32,7 @@ export default function Cart() {
             <p className="text-sm">Size: {item.quantity}</p> {/* Display quatity */}
             <p>$ {item.price}</p>
 
-            {/*<div className="flex items-center space-x-2">
-              <button
-                className="bg-gray-300 text-lg p-1 rounded-md"
-                onClick={() => dispatch(decreaseQuantity(item.id))}
-              >
-                -
-              </button>
-              <span className="font-bold">{item.quantity}</span>
-              <button
-                className="bg-gray-300 text-lg p-1 rounded-md"
-                onClick={() => dispatch(increaseQuantity(item.id))}
-              >
-                +
-              </button>
-            </div>*/}
+            
 
             <button
               className="bg-red-600 text-sm p-2 rounded-md text-white font-bold"
