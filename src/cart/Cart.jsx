@@ -23,7 +23,7 @@ export default function Cart() {
             className="bg-gray-100 rounded-md p-4 flex justify-between items-center"
           >
             <img
-              src={item.images}
+              src={item.images[1]}
               className="md:w-[100px] w-16 md:h-[120px] rounded-md"
               alt={item.name}
             />
