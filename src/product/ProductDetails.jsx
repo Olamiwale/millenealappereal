@@ -91,7 +91,7 @@ export default function ProductDetails() {
               {product.name}
             </h1>
 
-            <p> NGN {product.price}.00</p>
+            <p className="tracking-widest"> ₦ {product.price}.00</p>
           </div>
 
           <div className="md:mt-0 flex flex-col md:justify-center  md:items-start uppercase leading-5 md:w-full">
@@ -135,7 +135,14 @@ export default function ProductDetails() {
               <Accordion />
             </div>
 
+            <div> 
+              <p className="tracking-wider mt-[20px] text-xl font-medium">
+                  <span className="text-blue-600">Click here </span>for custom measurement
+                 
+                </p></div>
+
             <div className="flex gap-2 justify-between mt-[40px] uppercase font-bold text-white">
+
               <div className="p-3 bg-yellow-500 hover:bg-yellow-400 rounded-md w-full flex items-center space-x-5 justify-center">
                 <img src="/phoneImg.png" className="w-4" />
                 <p className="tracking-wider font-medium text-sm">
@@ -146,6 +153,14 @@ export default function ProductDetails() {
                   </span>
                 </p>
               </div>
+
+              
+               
+               
+              
+
+
+
               {/*<div className="bg-green-600 hover:bg-green-500 rounded-md transition duration-500 cursor-pointer w-full flex justify-center items-center space-x-5">
                 <a href="https://wa.me/+2347056881825?text=Hello%20there!">
                   Whatsapp
