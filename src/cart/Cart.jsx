@@ -29,7 +29,7 @@ export default function Cart() {
             />
             <p className="font-bold md:text-xl text-sm">{item.name}</p>
             <p className="text-sm">Size: {item.size}</p> {/* Display size */}
-            <p className="text-sm">Size: {item.quantity}</p> {/* Display quatity */}
+            <p className="text-sm">Quantity: {item.quantity}</p> {/* Display quatity */}
             <p>$ {item.price}</p>
 
             

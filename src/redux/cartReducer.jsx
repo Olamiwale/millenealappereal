@@ -1,6 +1,6 @@
 // Utility function to save state to localStorage
 const saveCartToLocalStorage = (cartItems) => {
-    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+  localStorage.setItem('cartItems', JSON.stringify(cartItems));
   };
   
   // Utility function to load cart from localStorage

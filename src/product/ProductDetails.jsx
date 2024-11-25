@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import { useParams } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../redux/actions";
 
 import Data from "../products.json";
@@ -13,12 +13,10 @@ export default function ProductDetails() {
   const [product, setProduct] = useState(null);
   const [mainImage, setMainImage] = useState("");
 
+  const [selectedSize, setSelectedSize] = useState("");
+  const [quantity, setQuantity] = useState(1);
 
-  const [selectedSize, setSelectedSize] = useState('')
-  const [quantity, setQuantity] = useState('')
-
- 
-
+  //fetching the products
   useEffect(() => {
     const product = Data.find((item) => item.id === id);
     if (product) {
@@ -32,8 +30,9 @@ export default function ProductDetails() {
   }
 
   const dispatch = useDispatch();
+  //const cart = useSelector((state) => state.cart.items); // Fetch current cart items from Redux state
 
-
+  //add product to the cart
   const handleAddToCart = () => {
     if (!selectedSize) {
       alert("Please select a size");
@@ -42,16 +41,16 @@ export default function ProductDetails() {
 
     const cartItem = {
       ...product,
-      size: selectedSize, // Include selected size
+      size: selectedSize,
       quantity: quantity,
     };
 
     dispatch(addToCart(cartItem));
+
+    alert("add product to cart?");
   };
 
-
-
-  return ( 
+  return (
     <div>
       <div className="p-8 mb-8 flex md:flex-row flex-col justify-between pt-[40px] gap-20">
         <div className="flex md:flex-row flex-col justify-evenly items-start md:w-1/2">
@@ -59,7 +58,10 @@ export default function ProductDetails() {
             <h1 className="font-bold text-xl tracking-widest">
               {product.name}
             </h1>
-            <p className="text-xl tracking-widest leading-3"> ₦ {product.price}.00</p>
+            <p className="text-xl tracking-widest leading-3">
+              {" "}
+              ₦ {product.price}.00
+            </p>
           </div>
 
           <div className="md:ml-4 items-center flex-col-reverse md:flex-row flex justify-center">
@@ -99,35 +101,48 @@ export default function ProductDetails() {
               <p className="underline py-4 font-bold">Available in size</p>
             </div>
 
-          
-             <ul className="flex gap-3">
+            <ul className="flex gap-3">
               {["s", "m", "l", "xl", "xxl"].map((size) => (
                 <li
                   key={size}
                   className={`cursor-pointer border-[2px] border-black/40 py-2 text-center w-[40px] ${
                     selectedSize === size ? "bg-black text-white" : ""
                   }`}
-                  onClick={() => setSelectedSize(size)}>
+                  onClick={() => setSelectedSize(size)}
+                >
                   {size}
                 </li>
               ))}
-             </ul>
+            </ul>
 
-             <div className="pt-10">
-              <input type="number" className="border-2 p-3" value={quantity} onChange={(e)=>setQuantity(e.target.value)} />
-             </div>
+            <div className=" flex flex-col pt-10">
+              <label className="py-4 text-sm font-bold underline">Quantity</label>
+              <input
+                type="number"
+                className="border-2 p-3"
+                value={quantity}
+                onChange={(e) => setQuantity(e.target.value)}
+              />
+            </div>
 
+            <div className="py-4">
+              <p className=" text-sm tracking-wider mt-[20px]">
+                <span className="text-white font-semibold rounded-full bg-slate-900 mr-2 cursor-pointer p-2">Click here </span> for custom
+                measurement
+              </p>
+            </div>
 
-           { /* <button
+            {/* <button
               className="mt-10 w-full bg-black p-3 text-white font-bold uppercase"
               onClick={() => dispatch(addToCart(product))}>Add to cart
             </button>*/}
 
             <button
               className="mt-10 w-full bg-black p-3 text-white font-bold uppercase"
-              onClick={handleAddToCart}>Add to cart
+              onClick={handleAddToCart}
+            >
+              Add to cart
             </button>
-
           </div>
 
           <div className="flex flex-col">
@@ -135,31 +150,18 @@ export default function ProductDetails() {
               <Accordion />
             </div>
 
-            <div> 
-              <p className="tracking-wider mt-[20px] text-xl font-medium">
-                  <span className="text-blue-600">Click here </span>for custom measurement
-                 
-                </p></div>
+           
 
             <div className="flex gap-2 justify-between mt-[40px] uppercase font-bold text-white">
-
               <div className="p-3 bg-yellow-500 hover:bg-yellow-400 rounded-md w-full flex items-center space-x-5 justify-center">
                 <img src="/phoneImg.png" className="w-4" />
                 <p className="tracking-wider font-medium text-sm">
                   Call to order
                   <span className="tracking-widest font-bold">
-                    
                     +234 703 382 1612
                   </span>
                 </p>
               </div>
-
-              
-               
-               
-              
-
-
 
               {/*<div className="bg-green-600 hover:bg-green-500 rounded-md transition duration-500 cursor-pointer w-full flex justify-center items-center space-x-5">
                 <a href="https://wa.me/+2347056881825?text=Hello%20there!">
@@ -175,4 +177,3 @@ export default function ProductDetails() {
     </div>
   );
 }
-
