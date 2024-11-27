@@ -34,12 +34,12 @@ export default function Shop() {
                   
                   {item.name}
                 </p>
-                <p className=" tracking-widest text-gray-900 text-sm pb-2"> ₦ {item.price}.00 </p>
+                <p className=" tracking-widest text-black text-sm pb-2"> ₦ {item.price}.00 </p>
             
               <div className="cursor-pointer group border-black/40 opacity-0  group-hover:opacity-100 border-[1px] w-full"                
                 onClick={() => dispatch(addToCart(item))}
               >
-               <p className="uppercase p-3 text-center tracking-widest hover:bg-slate-800 hover:text-white transition-all duration-500 text-sm font-semibold">Add to Cart</p>
+               <p className="uppercase p-3 text-center tracking-widest hover:bg-black/90 hover:text-white transition-all duration-500 text-sm font-semibold">Add to Cart</p>
               </div>
             </div>
           </div>
@@ -48,7 +48,7 @@ export default function Shop() {
 
       <a
         href="/product"
-        className="hover:bg-slate-600  mb-10 bg-slate-800 uppercase text-white font-medium text-sm tracking-widest p-3" >
+        className="hover:bg-black/90  mb-10 bg-black w-[250px] text-center rounded-full uppercase text-white font-medium text-sm tracking-widest p-3" >
         discover more
       </a>
 

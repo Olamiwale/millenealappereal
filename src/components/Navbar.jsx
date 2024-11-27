@@ -29,8 +29,8 @@ export default function Navbar() {
   }
 
   return (
-    <div className="sticky top-0 shadow-lg bg-slate-200 z-50">
-      <div className="flex bg-slate-900 justify-center p-3">
+    <div className="sticky top-0 shadow-xl bg-white z-50">
+      <div className="flex bg-wine justify-center p-3">
         <p className="font-bold text-[10px] text-gray-50 tracking-wider">
           YOU FIRST SHIPPING ON ORDER COLLECTION
         </p>
