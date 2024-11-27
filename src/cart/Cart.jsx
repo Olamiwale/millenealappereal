@@ -9,7 +9,7 @@ export default function Cart() {
   const dispatch = useDispatch();
 
   return (
-    <div className="p-5 pt-10">
+    <div className="p-5 pb-[200px] pt-[50px]">
       <div className="md:text-xl text-sm flex justify-center m-auto font-semibold text-black bg-gray-100 w-fit p-2 mb-5">
         {cartItems.length === 0
           ? "You have no items in your Cart"
