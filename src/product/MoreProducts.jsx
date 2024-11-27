@@ -33,7 +33,7 @@ export default function MoreProduct() {
               <img src={item.images[1]} className="w-full h-full" />
             </a>
 
-            <p className="py-3 text-[10px]"> {item.name} </p>
+            <p className="py-3 text-center text-[10px]"> {item.name} </p>
            
            
           </div>

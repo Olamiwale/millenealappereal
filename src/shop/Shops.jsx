@@ -60,14 +60,15 @@ export default function Shop() {
                   ₦ {item.price}.00
                 </p>
 
-                <div
+                {/*<div
                   className="cursor-pointer group border-black/40 opacity-0  group-hover:opacity-100 border-[1px] w-full"
                   onClick={() => dispatch(addToCart(item))}
                 >
                   <p className="uppercase p-3 text-center tracking-widest hover:bg-slate-800 hover:text-white transition-all duration-500 text-sm font-semibold">
                     Add to Cart
                   </p>
-                </div>
+                </div>*/}
+                
               </div>
             </div>
           ))}

@@ -36,11 +36,11 @@ export default function Shop() {
                 </p>
                 <p className=" tracking-widest text-black text-sm pb-2"> ₦ {item.price}.00 </p>
             
-              <div className="cursor-pointer group border-black/40 opacity-0  group-hover:opacity-100 border-[1px] w-full"                
+             {/* <div className="cursor-pointer group border-black/40 opacity-0  group-hover:opacity-100 border-[1px] w-full"                
                 onClick={() => dispatch(addToCart(item))}
               >
                <p className="uppercase p-3 text-center tracking-widest hover:bg-black/90 hover:text-white transition-all duration-500 text-sm font-semibold">Add to Cart</p>
-              </div>
+              </div> */}
             </div>
           </div>
         ))}

@@ -137,20 +137,25 @@ export default function ProductDetails() {
               />
             </div>
 
-            <div className="py-4">
-              <p className=" text-sm tracking-wider mt-[20px]">
-                <span className="text-white font-semibold rounded-full bg-slate-900 mr-2 cursor-pointer p-2">Click here </span> for custom
-                measurement
-              </p>
+
+            <div className="mt-16 flex items-center mb-10">
+              <a href="https://wa.me/+2347056881825?text=Hello%20there!%20I%20would%20like%20to%20provide%20my%20custom%20measurements%20for%20a%20cloth%20design.%20Please%20guide%20me%20on%20how%20to%20proceed" 
+              
+              className=" text-white text-sm tracking-widest font-semibold px-5 p-3 bg-black hover:bg-black/90 rounded-full">
+                Click here  
+                 </a>
+
+                <p className="ml-2 font-semibold cursor-pointer text-sm tracking-widest ">for custom measurement </p> 
+                  
+                 
+                 
+             
             </div>
 
-            {/* <button
-              className="mt-10 w-full bg-black p-3 text-white font-bold uppercase"
-              onClick={() => dispatch(addToCart(product))}>Add to cart
-            </button>*/}
+            
 
             <button
-              className="mt-10 w-full hover:bg-black/90 transition-all duration-500 bg-black p-3 text-white font-bold uppercase"
+              className="mt-8 w-full hover:bg-black/90 transition-all duration-500 bg-black p-3 text-white font-bold uppercase"
               onClick={handleAddToCart}
             >
               Add to cart
@@ -165,22 +170,16 @@ export default function ProductDetails() {
            
 
             <div className="flex gap-2 justify-between mt-[40px] uppercase font-bold text-white">
-              <div className="p-3 bg-yellow-500 hover:bg-yellow-400 rounded-md w-full flex items-center space-x-5 justify-center">
+              <a href="tel:+2347033821612" className="p-3 bg-yellow-500 hover:bg-yellow-600 rounded-md w-full flex items-center space-x-5 justify-center">
                 <img src="/phoneImg.png" className="w-4" />
-                <p className="tracking-wider font-medium text-sm">
+                <p className="tracking-widest font-medium text-sm">
                   Call to order
-                  <span className="tracking-widest font-bold">
-                    +234 703 382 1612
+                  <span className="tracking-widest ml-3 font-bold">
+                     +234 703 382 1612
                   </span>
                 </p>
-              </div>
+              </a>
 
-              {/*<div className="bg-green-600 hover:bg-green-500 rounded-md transition duration-500 cursor-pointer w-full flex justify-center items-center space-x-5">
-                <a href="https://wa.me/+2347056881825?text=Hello%20there!">
-                  Whatsapp
-                </a>
-                <img src="/whatsapp.png" className="w-8" />
-              </div>*/}
             </div>
           </div>
         </div>

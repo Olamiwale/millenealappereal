@@ -2,6 +2,8 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { removeFromCart } from "../redux/actions"; // Assuming you have these actions
 
+import { FaTrashCan } from "react-icons/fa6";
+
 export default function Cart() {
   const cartItems = useSelector((state) => state.cart.cartItems);
   const dispatch = useDispatch();
@@ -20,7 +22,7 @@ export default function Cart() {
         {cartItems.map((item) => (
           <div
             key={item.id}
-            className="bg-gray-100 rounded-md p-4 flex justify-between items-center"
+            className="bg-white shadow-lg rounded-md p-4 flex justify-between items-center"
           >
             <img
               src={item.images[1]}
@@ -32,7 +34,7 @@ export default function Cart() {
             <p className="font-bold md:text-xl text-sm">{item.name}</p>
 
             
-            <p className="Size">Size: <span className="font-bold"> {item.size}</span> </p> 
+            <p className="Size">Size: <span className="font-bold uppercase"> {item.size}</span> </p> 
             <p className="Size">Quantity: <span className="font-bold"> {item.quantity}</span> </p> 
             <p className="Size">Colour: <span className="font-bold"> {item.color}</span> </p> 
             
@@ -41,10 +43,10 @@ export default function Cart() {
             
 
             <button
-              className="bg-red-600 text-sm p-2 rounded-md text-white font-bold"
+              className=" text-sm p-2"
               onClick={() => dispatch(removeFromCart(item.id))}
             >
-              Remove
+              <FaTrashCan size={20} />
             </button>
           </div>
         ))}
