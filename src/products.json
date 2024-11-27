@@ -12,7 +12,7 @@
            
         ], 
         "price": 85000,
-        "categories":"gown",
+        "category":"two-piece",
         "description" : "nice outfit with nice shape",
         "quantity": 0
     },
@@ -29,7 +29,7 @@
           
         ], 
         "price": 65000,
-        "categories":"gown",
+        "category":"gown",
         "description" : "nice outfit with nice shape",
         "quantity": 0
     },
@@ -44,7 +44,7 @@
            "../cosmic.png"
         ], 
         "price": 60000,
-        "categories":"gown",
+        "category":"gown",
         "description" : "nice outfit with nice shape",
         "quantity": 0
     },
@@ -60,7 +60,7 @@
           
         ], 
         "price": 45000,
-        "categories":"jumpsuit",
+        "category":"jumpsuit",
         "description" : "nice outfit with nice shape",
         "quantity": 0
     },
@@ -76,7 +76,7 @@
           
         ], 
         "price": 45000,
-        "categories":"jumpsuit",
+        "category":"gown",
         "description" : "nice outfit with nice shape",
         "quantity": 0
     },
@@ -90,7 +90,7 @@
            "../orchid05.png"
         ], 
         "price": 95000,
-        "categories":"gown",
+        "category":"gown",
         "description" : "nice outfit with nice shape",
         "quantity": 0
     },  
@@ -104,7 +104,7 @@
            "../newPro04.jpg"
         ], 
         "price": 70000,
-        "categories":"gown",
+        "category":"two-piece",
         "description" : "nice outfit with nice shape",
         "quantity": 0
     }  

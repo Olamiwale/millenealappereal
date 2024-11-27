@@ -39,9 +39,9 @@ export default function Navbar() {
       <div className=" container mx-auto px-10 pb-5  md:px-20">
         <div className="flex justify-between items-center ">
           <div>
-            <div className="md:hidden flex gap-10">
+            <div className="md:hidden cursor-pointer flex gap-10">
               {!toggle ? (
-                <FaBars onClick={nav} size={20} />
+                <FaBars className="transition-all duration-500 " onClick={nav} size={20} />
               ) : (
                 <FaXmark onClick={nav} size={20} />
               )}
@@ -65,7 +65,7 @@ export default function Navbar() {
           <div className="flex items-center lg:gap-[50px] gap-8">
             {/*<FaUser onClick={'/'} size={20} />*/}
 
-            <div className="flex">
+            <div className="flex cursor-pointer p-2">
               <FaCartShopping size={20} onClick={() => navigate("/cart")} />
               <p
                 className={
@@ -81,17 +81,21 @@ export default function Navbar() {
             
           </div>
         </div>
+      
+          <ul className={`absolute bg-slate-200 w-full justify-center items-start transition-all duration-[800ms] ease-in-out px-10 md:pl-20 py-5 left-0 ${
+    toggle
+      ? 'lg:hidden translate-y-0 opacity-100'
+      : 'hidden lg:hidden translate-y-full opacity-0'
+  }`}>
 
-       
-          <ul className={toggle ? 'lg:hidden absolute bg-slate-200 w-full justify-center items-start px-10 md:pl-20 py-5 left-0 ' : 'hidden'}>
-          <li onClick={() => { nav();  navigate("/")}} className="border-b-2 p-3 uppercase cursor-pointer">
+          <li onClick={() => { nav();  navigate("/")}} className="border-b-2 p-3 tracking-widest font-semibold cursor-pointer">
             Home
           </li>
-          <li onClick={() => { nav(); navigate("/product")}} className="border-b-2 p-3 uppercase cursor-pointer">
-            Product
+          <li onClick={() => { nav(); navigate("/product")}} className="border-b-2 p-3 tracking-widest font-semibold cursor-pointer">
+            Shop
           </li>
-          <li onClick={() => { nav(); navigate("/contact")}} className="border-b-2 p-3 uppercase cursor-pointer">
-            Contact
+          <li onClick={() => { nav(); navigate("/contact")}} className="border-b-2 p-3 tracking-widest font-semibold cursor-pointer">
+            Size Chart
           </li>
           </ul> 
 

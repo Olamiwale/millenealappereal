@@ -15,6 +15,7 @@ export default function ProductDetails() {
 
   const [selectedSize, setSelectedSize] = useState("");
   const [quantity, setQuantity] = useState(1);
+  const [color, setColor] = useState('')
 
   //fetching the products
   useEffect(() => {
@@ -43,6 +44,7 @@ export default function ProductDetails() {
       ...product,
       size: selectedSize,
       quantity: quantity,
+      color:color,
     };
 
     dispatch(addToCart(cartItem));
@@ -59,7 +61,7 @@ export default function ProductDetails() {
               {product.name}
             </h1>
             <p className="text-xl tracking-widest leading-3">
-              {" "}
+             
               ₦ {product.price}.00
             </p>
           </div>
@@ -102,10 +104,10 @@ export default function ProductDetails() {
             </div>
 
             <ul className="flex gap-3">
-              {["s", "m", "l", "xl", "xxl"].map((size) => (
+              {["S", "M", "L", "XL", "XXL"].map((size) => (
                 <li
                   key={size}
-                  className={`cursor-pointer border-[2px] border-black/40 py-2 text-center w-[40px] ${
+                  className={`cursor-pointer font-semibold uppercase border-[2px] border-black/40 py-2 text-center px-5 w-[80px] md:w-[40px] ${
                     selectedSize === size ? "bg-black text-white" : ""
                   }`}
                   onClick={() => setSelectedSize(size)}
@@ -115,8 +117,18 @@ export default function ProductDetails() {
               ))}
             </ul>
 
-            <div className=" flex flex-col pt-10">
-              <label className="py-4 text-sm font-bold underline">Quantity</label>
+            <div className="my-10 flex flex-col">
+              <label className="py-4 text-sm font-bold underline">Colour</label>
+              <input
+              type="text"
+              placeholder="Colour"
+              value={color}
+              className="p-2 border-2"
+              onChange={(e) => setColor(e.target.value)} />
+            </div>
+
+            <div className=" flex flex-col">
+            <label className="py-4 text-sm font-bold underline">Quantity</label>
               <input
                 type="number"
                 className="border-2 p-3"
@@ -138,7 +150,7 @@ export default function ProductDetails() {
             </button>*/}
 
             <button
-              className="mt-10 w-full bg-black p-3 text-white font-bold uppercase"
+              className="mt-10 w-full hover:bg-black/90 transition-all duration-500 bg-black p-3 text-white font-bold uppercase"
               onClick={handleAddToCart}
             >
               Add to cart

@@ -2,88 +2,22 @@ import React, { useState } from "react";
 
 export default function BankTransfer () {
   return (
-    <form className="grid w-full justify-center py-7">
-      <div className="space-y-10 p-8">
-        <p className="tracking-wider text-2xl">Payment Detail</p>
-        <div className="space-y-4">
-          <label htmlFor="first-name" className="block font-medium">
-            First name
-          </label>
-
-          <input
-            name="first-name"
-            type="text"
-            className="w-full rounded-sm p-4 text-gray-900 ring-1 ring-gray-300"
-          />
+    <div className="border border-gray-300 md:w-[800px] w-full mt-20 rounded-md p-4">
+        <h3 className="text-gray-800 font-bold mb-2">
+          Pay via Direct Bank Transfer
+        </h3>
+        <p className="text-gray-600 text-sm leading-10 mb-4">
+          Make payment to account below and send proof of payment via
+          WhatsApp to <span className="font-bold">+234 812 345 6789</span>.
+        </p>
+        <div className="bg-gray-100 rounded-md p-4 mb-4">
+          <p className="text-sm text-gray-700 tracking-widest leading-10">
+            <strong>Bank Name:</strong> Example Bank <br />
+            <strong>Account Name:</strong> MapByRuby <br />
+            <strong>Account Number:</strong> 1234567890
+          </p>
         </div>
-
-        <div className="space-y-4">
-          <label htmlFor="first-name" className="block font-medium">
-            Last name
-          </label>
-
-          <input
-            name="first-name"
-            type="text"
-            className="w-full rounded-sm p-4 text-gray-900 ring-1 ring-gray-300"
-          />
-        </div>
-        <div className="space-y-4">
-          <label htmlFor="first-name" className="block font-medium">
-            Email
-          </label>
-
-          <input
-            name="first-name"
-            type="text"
-            className="w-full rounded-sm p-4 text-gray-900 ring-1 ring-gray-300"
-          />
-        </div>
-
-        <div className="space-y-4">
-          <label htmlFor="country" className="block font-medium">
-            Country / State
-          </label>
-          <input
-            placeholder="Nigeria / Lagos"
-            name="first-name"
-            type="text"
-            className="w-full rounded-sm p-4 text-gray-900 ring-1 ring-gray-300"
-          />
-
-          <div className="flex space-x-5">
-            <input
-              placeholder="Postal code (Optional)"
-              name="postal-code"
-              type="text"
-              className="w-full rounded-sm p-4 text-gray-900 ring-1 ring-gray-300"
-            />
-            <input
-              placeholder="City (Optional)"
-              name="postal-code"
-              type="text"
-              className="w-full rounded-sm p-4 text-gray-900 ring-1 ring-gray-300"
-            />
-          </div>
-        </div>
-
-        <div className="space-y-4">
-          <label htmlFor="street-address" className="block font-medium">
-            Street address
-          </label>
-
-          <input
-            type="text"
-            className="w-full rounded-sm p-4 text-gray-900 ring-1 ring-gray-300"
-          />
-        </div>
+       
       </div>
-
-      <div className="flex justify-center">
-         <button className="bg-green-500 transition duration-500 hover:bg-green-600 uppercase tracking-widest font-bold text-white p-4 w-1/2">Make Payment</button>
-      </div>
-
-     
-    </form>
   );
 }

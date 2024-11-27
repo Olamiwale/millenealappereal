@@ -27,9 +27,15 @@ export default function Cart() {
               className="md:w-[100px] w-16 md:h-[120px] rounded-md"
               alt={item.name}
             />
+
+            
             <p className="font-bold md:text-xl text-sm">{item.name}</p>
-            <p className="text-sm">Size: {item.size}</p> {/* Display size */}
-            <p className="text-sm">Quantity: {item.quantity}</p> {/* Display quatity */}
+
+            
+            <p className="Size">Size: <span className="font-bold"> {item.size}</span> </p> 
+            <p className="Size">Quantity: <span className="font-bold"> {item.quantity}</span> </p> 
+            <p className="Size">Colour: <span className="font-bold"> {item.color}</span> </p> 
+            
             <p>$ {item.price}</p>
 
             
