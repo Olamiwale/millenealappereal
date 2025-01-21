@@ -12,7 +12,7 @@ export default function Shop() {
     <div className="flex justify-center bg-white flex-col lg:px-5 items-center">
       <div className="justify-center p-2 w-full pt-10 items-center flex flex-col py-5">
        
-        <p className="border-2 text-center font-bold tracking-widest uppercase p-3">our collection</p>
+        <p className="border-2 text-center font-bold tracking-widest uppercase my-8 p-3">our collection</p>
       </div>
 
       <div className="px-4 py-8 grid lg:grid-cols-4 grid-cols-2 gap-6">
@@ -48,11 +48,9 @@ export default function Shop() {
 
       <a
         href="/product"
-        className="hover:bg-black/90  mb-10 bg-black w-[250px] text-center rounded-full uppercase text-white font-medium text-sm tracking-widest p-3" >
+        className="hover:bg-light-wine  mb-10 bg-wine w-[250px] text-center rounded-full uppercase text-white font-medium text-sm tracking-widest p-4 transition duration-500 ease-in-out transform " >
         discover more
-      </a>
-
-      
+      </a>   
 
       
     </div>

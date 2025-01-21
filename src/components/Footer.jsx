@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     
 
-<footer className="bg-black text-white py-8">
+<footer className="bg-black text-white tracking-wider py-8">
       <div className="container mx-auto px-10 grid grid-cols-1 md:grid-cols-3 gap-8">
         
         <div>
@@ -57,6 +57,7 @@ export default function Footer() {
      
       <div className="mt-8 border-t border-gray-700 pt-4 text-center text-sm">
         <p>&copy; 2024 E-Commerce. All Rights Reserved.</p>
+        <p>Design By Briitz</p>
       </div>
     </footer>
     

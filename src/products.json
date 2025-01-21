@@ -107,7 +107,23 @@
         "category":"two-piece",
         "description" : "nice outfit with nice shape",
         "quantity": 0
-    }  
+    }, 
+    {
+        "id": "00865",
+        "name": "Red Button",
+        "images": [
+           "../red_button01.jpg", 
+           "../red_button02.jpg", 
+           "../red_button01.jpg", 
+           "../red_button02.jpg"
+        ], 
+        "price": 100000,
+        "category":"two-piece",
+        "description" : "An array of exotic woven Aso-oke put together to bring you a perfect blend",
+        "quantity": 0
+    }
 ]
+
+
 
 

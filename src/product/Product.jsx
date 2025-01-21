@@ -36,27 +36,27 @@ export default function Product() {
           className="p-2 border border-gray-300 rounded w-full md:max-w-md"
         />
 
-        <div className=" flex justify-center">
+        <div className="flex justify-center">
           <button onClick={() => setFilteredCategory("")}
-            className={`p-2 mr-4 tracking-widest px-4 rounded text-sm ${!filteredCategory ? "bg-slate-800 text-white" : "border"}`}>
+            className={`p-2 mr-4 tracking-widest px-4 rounded text-sm ${!filteredCategory ? "bg-wine text-white" : "border"}`}>
              All
           </button>
           
           <button
             onClick={() => setFilteredCategory("gown")}
-            className={`p-2 mr-4 tracking-widest rounded text-sm px-4 ${filteredCategory === "gown" ? "bg-slate-800 text-white"
+            className={`p-2 mr-4 tracking-widest rounded text-sm px-4 ${filteredCategory === "gown" ? "bg-wine text-white"
                 : "border"}`}>
             Gown
           </button>
           <button
             onClick={() => setFilteredCategory("jumpsuit")}
-            className={`p-2 mr-4 tracking-widest rounded text-sm px-4 ${filteredCategory === "jumpsuit" ? "bg-slate-800 text-white"
+            className={`p-2 mr-4 tracking-widest rounded text-sm px-4 ${filteredCategory === "jumpsuit" ? "bg-wine text-white"
                 : "border"}`}>
             Jumpsuit
           </button>
           <button
             onClick={() => setFilteredCategory("two-piece")}
-            className={`p-2 mr-4 tracking-widest text-sm rounded px-4 ${filteredCategory === "two-piece" ? "bg-slate-800 text-white"
+            className={`p-2 mr-4 tracking-widest text-sm rounded px-4 ${filteredCategory === "two-piece" ? "bg-wine text-white"
                 : "border"}`}>
             Two Piece
           </button>

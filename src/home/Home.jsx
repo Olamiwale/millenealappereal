@@ -19,9 +19,9 @@ export default function Home({videoUrl}) {
     <div>
       <Hero />
       <Shop />
-      <Xmas />
+      {/*<Xmas />*/}
       <VideoPlayer />
-       <Shops />
+      <Shops />
     
     
     {  /*<ShowRoom />*/}

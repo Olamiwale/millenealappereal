@@ -27,8 +27,6 @@ export default function Checkout() {
                   <div className="flex items-center tracking-widest space-x-5">
                      <img src={item.images[0]} className="w-36"/>
                     <div className="flex flex-col space-y-5">
-
-              
                       
                        <p className="font-bold">Name: <span className="font-semibold">{item.name} </span> </p>
                        <p className="font-bold">Quantity: {item.quantity}</p>
