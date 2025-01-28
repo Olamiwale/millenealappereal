@@ -15,7 +15,7 @@ export default function ProductDetails() {
 
   const [selectedSize, setSelectedSize] = useState("");
   const [quantity, setQuantity] = useState(1);
-  const [color, setColor] = useState('')
+  const [selectedColor, setColor] = useState("")
 
   //fetching the products
   useEffect(() => {
@@ -117,7 +117,25 @@ export default function ProductDetails() {
               ))}
             </ul>
 
-            <div className="my-10 flex flex-col">
+            {/*choosing color of the product */}
+            <div className="w-full">
+              <p className="underline mt-10 font-bold">Available in Colour:</p>
+            </div>
+            <ul className="flex gap-3 mt-5">
+              {["Red", "Blue", "Black", "purple", "Yellow"].map((color) => (
+                <li
+                  key={color}
+                  className={`cursor-pointer font-semibold uppercase border-[2px] border-black/40 py-2 text-center px-5 w-[80px] md:w-[40px] ${
+                    selectedColor === color ? "bg-black text-white" : ""
+                  }`}
+                  onClick={() => setColor(color)}
+                >
+                  {color}
+                </li>
+              ))}
+            </ul>
+
+           { /*<div className="my-10 flex flex-col">
               <label className="py-4 text-sm font-bold underline">Colour</label>
               <input
               type="text"
@@ -125,7 +143,7 @@ export default function ProductDetails() {
               value={color}
               className="p-2 border-2"
               onChange={(e) => setColor(e.target.value)} />
-            </div>
+            </div>*/}
 
             <div className=" flex flex-col">
             <label className="py-4 text-sm font-bold underline">Quantity</label>

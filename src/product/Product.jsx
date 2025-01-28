@@ -75,7 +75,7 @@ export default function Product() {
                 <img
                 src={item.images[0]}
                 alt={item.name}
-                className="w-full h-48 object-cover mb-4 rounded"
+                className="w-full h-[200px] object-cover mb-4 rounded"
                
               /> 
               </a>
