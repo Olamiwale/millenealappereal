@@ -14,7 +14,8 @@
         "price": 85000,
         "category":"two-piece",
         "description" : "nice outfit with nice shape",
-        "quantity": 0
+        "quantity": 0,
+        "col": "Red"
     },
 
     {

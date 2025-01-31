@@ -22,6 +22,14 @@ export default function PayButton() {
   );
 
   const pay = () => {
+
+    const productDetails = cartItems.map((item) => ({
+      display_name: `Product: ${item.name}`,
+      variable_name: `product_${item.id}`,
+      value: `Qty: ${item.quantity}`,
+    }));
+
+    
     popup.newTransaction({
       key: "pk_test_e52244433a45c5f15b2245839a52713d071f88a6",
       email: email,
@@ -45,6 +53,11 @@ export default function PayButton() {
             display_name: "Phone Number",
             variable_name: "phone_name",
             value: phoneNumber,
+          },
+          {
+            display_name: "Product",
+            variable_name: "product_name",
+            value: productName,
           },
         ],
       },
