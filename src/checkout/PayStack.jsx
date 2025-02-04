@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 export default function PayButton() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
-  //const [address, setAddress] = useState('')
+  const [address, setAddress] = useState('')
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
 
@@ -18,15 +18,13 @@ export default function PayButton() {
 
   const totalPrice = cartItems.reduce(
     (total, item) => total + item.price * item.quantity,
-    0
-  );
+    0);
 
-  const pay = () => {
-
+  const pay = () => { 
     const productDetails = cartItems.map((item) => ({
       display_name: `Product: ${item.name}`,
       variable_name: `product_${item.id}`,
-      value: `Qty: ${item.quantity}`,
+      value: `Qty: ${item.quantity}, Color: ${item.color}`,
     }));
 
     
@@ -54,11 +52,10 @@ export default function PayButton() {
             variable_name: "phone_name",
             value: phoneNumber,
           },
-          {
-            display_name: "Product",
-            variable_name: "product_name",
-            value: productName,
-          },
+          { display_name: "Address", variable_name: "address", value: address },
+
+          ...productDetails
+         
         ],
       },
       onSuccess: (transaction) => {
@@ -125,6 +122,12 @@ export default function PayButton() {
             value={email}
             required
           />
+        </div>
+        <div className="flex flex-col">
+          <label className="font-semibold py-2">Address</label>
+          <input className="border-2 p-4 tracking-widest" type="text" 
+          placeholder="Address" 
+          onChange={(e) => setAddress(e.target.value)} value={address} required />
         </div>
       </form>
 
