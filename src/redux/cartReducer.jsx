@@ -1,3 +1,6 @@
+import { CLEAR_CART } from '../redux/actions';
+
+
 // Utility function to save state to localStorage
 const saveCartToLocalStorage = (cartItems) => {
   localStorage.setItem('cartItems', JSON.stringify(cartItems));
@@ -29,6 +32,12 @@ const saveCartToLocalStorage = (cartItems) => {
         const filteredCart = state.cartItems.filter(item => item.id !== action.payload);
         saveCartToLocalStorage(filteredCart); // Save updated cart to localStorage
         return { ...state, cartItems: filteredCart };
+
+        case CLEAR_CART:
+      return {
+        ...state,
+        cartItems: [],
+      };
   
       default:
         return state;

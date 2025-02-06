@@ -23,3 +23,13 @@ export const addToCart = (product) => {
     payload: itemId,
   });
   
+
+ 
+export const CLEAR_CART = 'CLEAR_CART';
+
+export const clearCart = (itemId) => {
+  return {
+    type: CLEAR_CART,
+    payload: itemId,
+  };
+};

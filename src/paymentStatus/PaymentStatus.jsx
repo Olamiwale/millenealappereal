@@ -12,7 +12,7 @@ export default function PaymentStatus() {
       Thank you for patronizing <span className="font-bold">MapByRuby</span>.
     </p>
     <button
-      onClick={() => window.location.href = '/product'}
+      onClick={() => window.location.href = '/'}
       className="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-md transition-all duration-300"
     >
       Continue Shopping

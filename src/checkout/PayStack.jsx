@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+//import { clearCart } from "../redux/actions";
 
 export default function PayButton() {
   const [firstName, setFirstName] = useState("");
@@ -43,6 +44,7 @@ export default function PayButton() {
         },
         callback: (response) => {
           console.log("Payment successful", response);
+          //dispatch(clearCart()); 
           navigate("/payment-status");
         },
         onClose: () => {
