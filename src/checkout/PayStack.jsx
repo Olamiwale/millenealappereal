@@ -1,81 +1,64 @@
 import React, { useState } from "react";
-import Paystack from "@paystack/inline-js";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
 export default function PayButton() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
-  const [address, setAddress] = useState('')
+  const [address, setAddress] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
 
   const navigate = useNavigate();
-
-  const popup = new Paystack();
-
+  const paystackKey = import.meta.env.VITE_PAYSTACK_KEY;
   const cartItems = useSelector((state) => state.cart.cartItems);
 
   const totalPrice = cartItems.reduce(
     (total, item) => total + item.price * item.quantity,
-    0);
+    0
+  );
 
-  const pay = () => { 
-    const productDetails = cartItems.map((item) => ({
-      display_name: `Product: ${item.name}`,
-      variable_name: `product_${item.id}`,
-      value: `Qty: ${item.quantity}, Color: ${item.color}`,
-    }));
+  const pay = () => {
+    try {
+      const productDetails = cartItems.map((item) => ({
+        display_name: `Product: ${item.name}`,
+        variable_name: `product_${item.id}`,
+        value: `Qty: ${item.quantity}, Color: ${item.color}`,
+      }));
 
-    
-    popup.newTransaction({
-      key: "pk_test_e52244433a45c5f15b2245839a52713d071f88a6",
-      email: email,
-      amount: totalPrice * 100,
-      phone: phoneNumber,
+      const paystackPopup = window.PaystackPop.setup({
+        key: paystackKey,
+        email: email,
+        amount: totalPrice * 100,
+        currency: "NGN",
+        phone: phoneNumber,
+        metadata: {
+          custom_fields: [
+            { display_name: "First Name", variable_name: "first_name", value: firstName },
+            { display_name: "Last Name", variable_name: "last_name", value: lastName },
+            { display_name: "Phone Number", variable_name: "phone_number", value: phoneNumber },
+            { display_name: "Address", variable_name: "address", value: address },
+            ...productDetails,
+          ],
+        },
+        callback: (response) => {
+          console.log("Payment successful", response);
+          navigate("/payment-status");
+        },
+        onClose: () => {
+          console.log("Transaction closed by user");
+        },
+      });
 
-      metadata: {
-        custom_fields: [
-          {
-            display_name: "First Name",
-            variable_name: "first_name",
-            value: firstName,
-          },
-
-          {
-            display_name: "Last Name",
-            variable_name: "last_name",
-            value: lastName,
-          },
-          {
-            display_name: "Phone Number",
-            variable_name: "phone_name",
-            value: phoneNumber,
-          },
-          { display_name: "Address", variable_name: "address", value: address },
-
-          ...productDetails
-         
-        ],
-      },
-      onSuccess: (transaction) => {
-        console.log(transaction);
-        navigate("/payment-status");
-      },
-      onLoad: (response) => {
-        console.log("onLoad: ", response);
-      },
-      onCancel: () => {
-        console.log("onCancel");
-      },
-      onError: (error) => {
-        console.log("Error: ", error.message);
-      },
-    });
+      paystackPopup.openIframe();
+    } catch (error) {
+      console.log("Error: ", error.message);
+    }
   };
+
   return (
     <div className="flex flex-col justify-center w-full items-center mt-6">
-      <form className="flex  flex-col md:w-[800px] w-full m-8 bg-slate-50 p-2  ">
+      <form className="flex flex-col md:w-[800px] w-full m-8 bg-slate-50 p-2">
         <div className="flex flex-col">
           <label className="font-semibold py-2">First Name</label>
           <input
@@ -87,7 +70,6 @@ export default function PayButton() {
             required
           />
         </div>
-
         <div className="flex flex-col">
           <label className="font-semibold py-2">Last Name</label>
           <input
@@ -99,19 +81,17 @@ export default function PayButton() {
             required
           />
         </div>
-
         <div className="flex flex-col">
           <label className="font-semibold py-2">Phone Number</label>
           <input
             className="border-2 p-4 tracking-widest"
             type="text"
-            placeholder="Last Name"
+            placeholder="Phone Number"
             onChange={(e) => setPhoneNumber(e.target.value)}
             value={phoneNumber}
             required
           />
         </div>
-
         <div className="flex flex-col">
           <label className="font-semibold py-2">Email Address</label>
           <input
@@ -125,13 +105,17 @@ export default function PayButton() {
         </div>
         <div className="flex flex-col">
           <label className="font-semibold py-2">Address</label>
-          <input className="border-2 p-4 tracking-widest" type="text" 
-          placeholder="Address" 
-          onChange={(e) => setAddress(e.target.value)} value={address} required />
+          <input
+            className="border-2 p-4 tracking-widest"
+            type="text"
+            placeholder="Address"
+            onChange={(e) => setAddress(e.target.value)}
+            value={address}
+            required
+          />
         </div>
       </form>
-
-      <div className="border border-gray-300 md:w-[800px]  w-full rounded-md p-4 flex items-center justify-between">
+      <div className="border border-gray-300 md:w-[800px] w-full rounded-md p-4 flex items-center justify-between">
         <div className="leading-10">
           <h3 className="text-gray-800 uppercase tracking-wider font-bold">
             Pay with Paystack
