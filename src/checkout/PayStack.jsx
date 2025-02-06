@@ -11,7 +11,7 @@ export default function PayButton() {
   const [phoneNumber, setPhoneNumber] = useState("");
 
   const navigate = useNavigate();
-  //const paystackKey = import.meta.env.VITE_PAYSTACK_KEY;
+  const paystackKey = import.meta.env.VITE_PAYSTACK_KEY;
   const cartItems = useSelector((state) => state.cart.cartItems);
 
   const totalPrice = cartItems.reduce(
@@ -28,7 +28,7 @@ export default function PayButton() {
       }));
 
       const paystackPopup = window.PaystackPop.setup({
-        key: "pk_test_e52244433a45c5f15b2245839a52713d071f88a6",
+        key: paystackKey,
         email: email,
         amount: totalPrice * 100,
         currency: "NGN",
