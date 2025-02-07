@@ -190,7 +190,7 @@ export default function ProductDetails() {
                 <p className="tracking-widest font-medium text-sm">
                   Call to order
                   <span className="tracking-widest ml-3 font-bold">
-                     +234 703 382 1612
+                     +234 905 6881 825 
                   </span>
                 </p>
               </a>
