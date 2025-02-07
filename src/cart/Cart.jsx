@@ -30,6 +30,14 @@ export default function Cart() {
               alt={item.name}
             />
 
+
+            {/*<img
+  src={item.images?.[1] || item.images?.[0] || "/placeholder.jpg"} 
+  className="md:w-[100px] w-16 md:h-[120px] rounded-md"
+  alt={item.name}
+/>
+ */}
+
             
             <p className="font-bold md:text-xl text-sm">{item.name}</p>
 

@@ -128,11 +128,12 @@ export default function PayButton() {
         </div>
         <button
           onClick={pay}
-          className="bg-green-500 w-[250px] text-white font-semibold px-6 py-6 rounded-md hover:bg-green-600 transition"
+          className="bg-green-500 w-[250px] text-white font-semibold px-6 py-6 shadow-md rounded-md hover:bg-green-600 transition"
         >
           Pay Now
         </button>
       </div>
+      <p className="mt-10 text-sm font-bold  ">OR</p>
     </div>
   );
 }
