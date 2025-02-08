@@ -104,7 +104,7 @@ export default function ProductDetails() {
             </div>
 
             <ul className="flex gap-3">
-              {["S", "M", "L", "XL", "XXL"].map((size) => (
+              {["S", "M", "L", "XL", "2XL"].map((size) => (
                 <li
                   key={size}
                   className={`cursor-pointer font-semibold uppercase border-[2px] border-black/40 py-2 text-center px-5 w-[80px] md:w-[40px] ${
@@ -127,7 +127,7 @@ export default function ProductDetails() {
              
 
             <ul className="flex gap-3 mt-5">
-              {["Red", "Blue", "Black", "purple"].map((color) => (
+              {["Red", "Blue", "Black", "Purple"].map((color) => (
                 <li
                   key={color}
                   className={`cursor-pointer font-semibold uppercase border-[2px] border-black/40 py-2 text-center px-5  ${

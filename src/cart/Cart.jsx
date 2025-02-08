@@ -1,7 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { removeFromCart } from "../redux/actions"; // Assuming you have these actions
-
+import { removeFromCart, increaseQuantity, decreaseQuantity } from "../redux/actions"; // Added actions for quantity update
 import { FaTrashCan } from "react-icons/fa6";
 
 export default function Cart() {
@@ -30,28 +29,38 @@ export default function Cart() {
               alt={item.name}
             />
 
+            <div className="flex flex-col gap-1"> 
 
-            {/*<img
-  src={item.images?.[1] || item.images?.[0] || "/placeholder.jpg"} 
-  className="md:w-[100px] w-16 md:h-[120px] rounded-md"
-  alt={item.name}
-/>
- */}
-
-            
-            <p className="font-bold md:text-xl text-sm">{item.name}</p>
-
-            
+          <p className=" md:text-xl text-sm">Name: <span className="font-bold">{item.name} </span> </p>
             <p className="Size">Size: <span className="font-bold uppercase"> {item.size}</span> </p> 
-            <p className="Size">Quantity: <span className="font-bold"> {item.quantity}</span> </p> 
             <p className="Size">Colour: <span className="font-bold"> {item.color}</span> </p> 
-            
-            <p>$ {item.price}</p>
+            <p>Price: <span className="font-bold">  ₦ {item.price}</span></p>
 
+            
+            </div>
+
+           
+
+            {/* Quantity controls */}
+            <div className="flex items-center space-x-2">
+              <button 
+                className="bg-gray-200 px-2 py-1 rounded" 
+                onClick={() => dispatch(decreaseQuantity(item.id))} 
+                disabled={item.quantity <= 1}>
+                -
+              </button>
+              <p className="font-bold">{item.quantity}</p>
+              <button 
+                className="bg-gray-200 px-2 py-1 rounded" 
+                onClick={() => dispatch(increaseQuantity(item.id))}>
+                +
+              </button>
+            </div>
+            
             
 
             <button
-              className=" text-sm p-2"
+              className="text-sm p-2"
               onClick={() => dispatch(removeFromCart(item.id))}
             >
               <FaTrashCan size={20} />
@@ -63,9 +72,7 @@ export default function Cart() {
       {cartItems.length > 0 && (
         <div className="max-w-[800px] m-auto flex justify-end mt-10">
           <button className="bg-green-600 text-white p-3 rounded-md font-bold">
-            <a href="/checkout"> 
-              Checkout
-            </a>
+            <a href="/checkout"> Checkout </a>
           </button>
         </div>
       )}
