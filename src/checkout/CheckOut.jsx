@@ -24,7 +24,7 @@ export default function Checkout() {
                 <li
                   key={item.id}
                   className="flex justify-between items-center border-b-2 border-gray-200 mb-2">
-                  <div className="flex items-center tracking-widest space-x-5">
+                  <div className="flex items-center tracking-widest mt-5 space-x-5">
                      <img src={item.images[0]} className="w-36"/>
                     <div className="flex flex-col space-y-5">
                       
