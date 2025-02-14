@@ -13,7 +13,7 @@ export default function Hero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 2000); 
+    }, 3000); 
 
     return () => clearInterval(interval);
   }, []);
@@ -28,9 +28,9 @@ export default function Hero() {
       />
 
     
-      <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/80"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/40 to-black/80"></div>
 
-      {/* Content */}
+    
       <div className="relative flex flex-col items-center justify-center text-center h-full px-4">
         <div className="bg-white/50 opacity-80 p-10 items-center flex flex-col rounded-md">
           <h1 className="text-4xl md:text-6xl font-extrabold text-black tracking-wider">
@@ -50,7 +50,7 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Bottom Gradient Fade */}
+      
       <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-black"></div>
     </div>
   );
