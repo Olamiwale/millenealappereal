@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Data from "../products.json";
 
 const Accordion = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -24,7 +25,7 @@ const Accordion = () => {
             }`}
           >
             <div className="p-4 bg-white">
-              <p>No Detail for this product</p>
+              
             </div>
           </div>
         </div>
@@ -76,7 +77,7 @@ const Accordion = () => {
              
             </div>
           </div>
-        </div>
+        </div> 
       </div>
     </div>
   );

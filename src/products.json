@@ -1,12 +1,103 @@
 
 [  
     {
+        "id": "00830",
+        "name": "Trouser",
+        "images": [
+           "../image9191.png", 
+           "../image9192.png", 
+           "../image9192.png", 
+           "../image9191.png",
+           "../image9192.png"
+           
+        ], 
+        "price": 90000,
+        "category":"trouser",
+        "description" : "nice outfit with nice shape",
+        "quantity": 0,
+        "col": "Red"
+    },
+
+    {
+        "id": "00830",
+        "name": "Mint gown",
+        "images": [
+           "../image9990.png", 
+           "../image9991.png", 
+           "../image9990.png", 
+           "../image9991.png",
+           "../image9990.png"
+           
+        ], 
+        "price": 55000,
+        "category":"gown",
+        "description" : "nice outfit with nice shape",
+        "quantity": 0,
+        "col": "Red"
+    },
+
+    {
+        "id": "00831",
+        "name": "Peach",
+        "images": [
+           "../image8880.png", 
+           "../image8881.png", 
+           "../image8882.png", 
+           "../image8883.png",
+           "../image8884.png"
+           
+        ], 
+        "price": 75000,
+        "category":"two-piece",
+        "description" : "nice outfit with nice shape",
+        "quantity": 0,
+        "col": "Red"
+    },
+
+    {
+        "id": "008312",
+        "name": "Peach",
+        "images": [
+           "../image9180.png", 
+           "../image9181.png", 
+           "../image9186.png", 
+           "../image9183.png",
+           "../image9184.png"
+           
+        ], 
+        "price": 85000,
+        "category":"two-piece",
+        "description" : "nice outfit with nice shape",
+        "quantity": 0,
+        "col": "Red"
+    },
+
+
+    {
+        "id": "00832",
+        "name": "Atike Jumpsuit",
+        "images": [
+           "../image9179.png", 
+           "../image9170.png", 
+           "../image9172.png", 
+           "../image9173.png",
+           "../image9176.png"
+           
+        ], 
+        "price": 85000,
+        "category":"jumpsuit",
+        "description" : "Stand out from the crowd with our Atike Jumpsuit for special events and parties, everyday wear with a statement twist, travel and adventure",
+        "quantity": 0,
+        "col": "Red"
+    },
+
+    
+    {
         "id": "0083",
         "name": "Ashake",
         "images": [
            "../ashake.png", 
            "../ashake01.png", 
-         
            "../ashake04.png",
            "../ashake05.png"
            
@@ -17,6 +108,8 @@
         "quantity": 0,
         "col": "Red"
     },
+
+
 
     {
         "id": "0089",

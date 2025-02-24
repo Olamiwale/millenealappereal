@@ -96,6 +96,8 @@ export default function ProductDetails() {
             </h1>
 
             <p className="tracking-widest"> ₦ {product.price}.00</p>
+       
+          
           </div>
 
           <div className="md:mt-0 flex flex-col md:justify-center  md:items-start uppercase leading-5 md:w-full">
@@ -140,6 +142,8 @@ export default function ProductDetails() {
               ))}
             </ul>
 
+           
+
           
 
             <div className=" flex flex-col">
@@ -151,6 +155,8 @@ export default function ProductDetails() {
                 onChange={(e) => setQuantity(e.target.value)}
               />
             </div>
+
+            
 
 
             <div className="mt-16 flex items-center mb-10">

@@ -54,11 +54,19 @@ export default function Product() {
                 : "border"}`}>
             Jumpsuit
           </button>
+
           <button
             onClick={() => setFilteredCategory("two-piece")}
             className={`p-2 mr-4 tracking-widest text-sm rounded px-4 ${filteredCategory === "two-piece" ? "bg-wine text-white"
                 : "border"}`}>
             Two Piece
+          </button>
+
+          <button
+            onClick={() => setFilteredCategory("trouser")}
+            className={`p-2 mr-4 tracking-widest text-sm rounded px-4 ${filteredCategory === "trouser" ? "bg-wine text-white"
+                : "border"}`}>
+            Trouser
           </button>
          
         
@@ -70,7 +78,7 @@ export default function Product() {
       <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-2">
         {filteredProducts.length > 0 ? (
           filteredProducts.map((item) => (
-            <div key={item.id} className="bg-white p-4  rounded-lg">
+            <div key={item.id} className="bg-gray-50 shadow-md p-4  rounded-lg">
               <a  href={`/product/${item.id}`}>
                 <img
                 src={item.images[0]}
@@ -81,7 +89,7 @@ export default function Product() {
               </a>
              
               <h2 className="font-semibold tracking-widest pb-2">{item.name}</h2>
-              <p className="font-semibold tracking-widest">NGN {item.price}.00</p>
+              <p className="font-semibold tracking-widest">₦ {item.price}</p>
         
             </div>
           ))

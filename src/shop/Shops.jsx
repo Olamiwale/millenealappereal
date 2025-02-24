@@ -1,16 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Data from "../products.json";
 import { addToCart } from "../redux/actions";
 import { useDispatch } from "react-redux";
 
+const images = ["./hero01.png", "./hero02.png", "./hero03.png", "./hero04.jpg"];
+
 export default function Shop() {
   const dispatch = useDispatch();
+
+   const [currentImage, setCurrentImage] = useState(0);
+  
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setCurrentImage((prev) => (prev + 1) % images.length);
+      }, 3000);
+  
+      return () => clearInterval(interval);
+    }, []);
+  
 
   return (
     <>
       <div className="relative w-full h-screen bg-black">
         <img
-          src="./bimg.jpg"
+          src={images[currentImage]}
           alt="Luxury Collection"
           className="absolute inset-0 w-full h-full object-cover opacity-80"
         />
@@ -39,7 +52,7 @@ export default function Shop() {
         </div>
 
         <div className="px-4 py-8 grid lg:grid-cols-4 grid-cols-2 gap-6">
-          {Data.slice(0, 4).map((item, id) => (
+          {Data.slice(5, 9).map((item, id) => (
             <div
               key={id}
               className="flex flex-col justify-center pb-5 group items-center"
