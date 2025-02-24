@@ -12,7 +12,7 @@ export default function Shop() {
     <div className="flex justify-center bg-white flex-col lg:px-5 items-center">
       <div className="justify-center p-2 w-full pt-10 items-center flex flex-col py-5">
        
-        <p className="border-2 text-center font-bold tracking-widest uppercase my-8 p-3">our collection</p>
+        <p className="border-2 text-center font-bold tracking-widest uppercase my-8 p-3">our collections</p>
       </div>
 
       <div className="px-4 py-8 grid lg:grid-cols-4 grid-cols-2 gap-6">
