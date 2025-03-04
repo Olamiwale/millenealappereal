@@ -2,7 +2,7 @@
 [  
     {
         "id": "00830",
-        "name": "Trouser",
+        "name": "Red Buttons",
         "images": [
            "../image9191.png", 
            "../image9192.png", 
@@ -20,7 +20,7 @@
 
     {
         "id": "00830",
-        "name": "Mint gown",
+        "name": "Clara",
         "images": [
            "../image9990.png", 
            "../image9991.png", 
@@ -38,7 +38,7 @@
 
     {
         "id": "00831",
-        "name": "Peach",
+        "name": "Shopie",
         "images": [
            "../image8880.png", 
            "../image8881.png", 
@@ -56,7 +56,7 @@
 
     {
         "id": "008312",
-        "name": "Pastle",
+        "name": "Ava",
         "images": [
            "../image9180.png", 
            "../image9181.png", 
